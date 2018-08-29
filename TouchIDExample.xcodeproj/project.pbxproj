@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		DE43A5E72136E29A000F178A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43A5E62136E29A000F178A /* AppDelegate.swift */; };
-		DE43A5E92136E29A000F178A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43A5E82136E29A000F178A /* ViewController.swift */; };
+		DE43A5E92136E29A000F178A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43A5E82136E29A000F178A /* MainViewController.swift */; };
 		DE43A5EC2136E29A000F178A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE43A5EA2136E29A000F178A /* Main.storyboard */; };
 		DE43A5EE2136E29E000F178A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE43A5ED2136E29E000F178A /* Assets.xcassets */; };
 		DE43A5F12136E29E000F178A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE43A5EF2136E29E000F178A /* LaunchScreen.storyboard */; };
 		DE43A5FC2136E29E000F178A /* TouchIDExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43A5FB2136E29E000F178A /* TouchIDExampleTests.swift */; };
 		DE43A6072136E29E000F178A /* TouchIDExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43A6062136E29E000F178A /* TouchIDExampleUITests.swift */; };
+		DE43A61B2136E433000F178A /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43A61A2136E433000F178A /* UIViewControllerExtension.swift */; };
+		DE43A61D2136E459000F178A /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43A61C2136E459000F178A /* UIColorExtension.swift */; };
+		DE43A61F2136E696000F178A /* CustomViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43A61E2136E696000F178A /* CustomViewBase.swift */; };
+		DE43A6222136E79E000F178A /* DeviceOwnerLocalAuthenticatior.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43A6212136E79E000F178A /* DeviceOwnerLocalAuthenticatior.swift */; };
+		DE43A6242136E7E1000F178A /* DeviceOwnerLocalAuthenticationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43A6232136E7E1000F178A /* DeviceOwnerLocalAuthenticationType.swift */; };
+		DE43A6272136E947000F178A /* Passcode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE43A6252136E947000F178A /* Passcode.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +42,7 @@
 /* Begin PBXFileReference section */
 		DE43A5E32136E299000F178A /* TouchIDExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchIDExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE43A5E62136E29A000F178A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DE43A5E82136E29A000F178A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DE43A5E82136E29A000F178A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		DE43A5EB2136E29A000F178A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE43A5ED2136E29E000F178A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE43A5F02136E29E000F178A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +53,12 @@
 		DE43A6022136E29E000F178A /* TouchIDExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchIDExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE43A6062136E29E000F178A /* TouchIDExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchIDExampleUITests.swift; sourceTree = "<group>"; };
 		DE43A6082136E29E000F178A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE43A61A2136E433000F178A /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		DE43A61C2136E459000F178A /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		DE43A61E2136E696000F178A /* CustomViewBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewBase.swift; sourceTree = "<group>"; };
+		DE43A6212136E79E000F178A /* DeviceOwnerLocalAuthenticatior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceOwnerLocalAuthenticatior.swift; sourceTree = "<group>"; };
+		DE43A6232136E7E1000F178A /* DeviceOwnerLocalAuthenticationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceOwnerLocalAuthenticationType.swift; sourceTree = "<group>"; };
+		DE43A6262136E947000F178A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Passcode.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +109,16 @@
 		DE43A5E52136E29A000F178A /* TouchIDExample */ = {
 			isa = PBXGroup;
 			children = (
-				DE43A5E62136E29A000F178A /* AppDelegate.swift */,
-				DE43A5E82136E29A000F178A /* ViewController.swift */,
-				DE43A5EA2136E29A000F178A /* Main.storyboard */,
-				DE43A5ED2136E29E000F178A /* Assets.xcassets */,
-				DE43A5EF2136E29E000F178A /* LaunchScreen.storyboard */,
 				DE43A5F22136E29E000F178A /* Info.plist */,
+				DE43A5E62136E29A000F178A /* AppDelegate.swift */,
+				DE43A5ED2136E29E000F178A /* Assets.xcassets */,
+				DE43A6202136E6F0000F178A /* Enum */,
+				DE43A6172136E331000F178A /* Extension */,
+				DE43A6192136E3B9000F178A /* Model */,
+				DE43A6182136E346000F178A /* Module */,
+				DE43A6152136E2CD000F178A /* Storyboard */,
+				DE43A6162136E2FC000F178A /* View */,
+				DE43A6142136E2B6000F178A /* ViewController */,
 			);
 			path = TouchIDExample;
 			sourceTree = "<group>";
@@ -123,6 +139,64 @@
 				DE43A6082136E29E000F178A /* Info.plist */,
 			);
 			path = TouchIDExampleUITests;
+			sourceTree = "<group>";
+		};
+		DE43A6142136E2B6000F178A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DE43A5E82136E29A000F178A /* MainViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DE43A6152136E2CD000F178A /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				DE43A5EA2136E29A000F178A /* Main.storyboard */,
+				DE43A5EF2136E29E000F178A /* LaunchScreen.storyboard */,
+				DE43A6252136E947000F178A /* Passcode.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		DE43A6162136E2FC000F178A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE43A61E2136E696000F178A /* CustomViewBase.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE43A6172136E331000F178A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DE43A61A2136E433000F178A /* UIViewControllerExtension.swift */,
+				DE43A61C2136E459000F178A /* UIColorExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DE43A6182136E346000F178A /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				DE43A6212136E79E000F178A /* DeviceOwnerLocalAuthenticatior.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		DE43A6192136E3B9000F178A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE43A6202136E6F0000F178A /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				DE43A6232136E7E1000F178A /* DeviceOwnerLocalAuthenticationType.swift */,
+			);
+			path = Enum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE43A6272136E947000F178A /* Passcode.storyboard in Resources */,
 				DE43A5F12136E29E000F178A /* LaunchScreen.storyboard in Resources */,
 				DE43A5EE2136E29E000F178A /* Assets.xcassets in Resources */,
 				DE43A5EC2136E29A000F178A /* Main.storyboard in Resources */,
@@ -256,8 +331,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE43A5E92136E29A000F178A /* ViewController.swift in Sources */,
+				DE43A61F2136E696000F178A /* CustomViewBase.swift in Sources */,
+				DE43A5E92136E29A000F178A /* MainViewController.swift in Sources */,
+				DE43A6242136E7E1000F178A /* DeviceOwnerLocalAuthenticationType.swift in Sources */,
 				DE43A5E72136E29A000F178A /* AppDelegate.swift in Sources */,
+				DE43A61B2136E433000F178A /* UIViewControllerExtension.swift in Sources */,
+				DE43A61D2136E459000F178A /* UIColorExtension.swift in Sources */,
+				DE43A6222136E79E000F178A /* DeviceOwnerLocalAuthenticatior.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +387,14 @@
 				DE43A5F02136E29E000F178A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DE43A6252136E947000F178A /* Passcode.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE43A6262136E947000F178A /* Base */,
+			);
+			name = Passcode.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -433,6 +521,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5BF5553KY;
 				INFOPLIST_FILE = TouchIDExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,6 +540,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5BF5553KY;
 				INFOPLIST_FILE = TouchIDExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
