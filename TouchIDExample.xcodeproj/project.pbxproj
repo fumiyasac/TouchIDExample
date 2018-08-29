@@ -20,6 +20,7 @@
 		DE43A6222136E79E000F178A /* DeviceOwnerLocalAuthenticatior.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43A6212136E79E000F178A /* DeviceOwnerLocalAuthenticatior.swift */; };
 		DE43A6242136E7E1000F178A /* DeviceOwnerLocalAuthenticationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43A6232136E7E1000F178A /* DeviceOwnerLocalAuthenticationType.swift */; };
 		DE43A6272136E947000F178A /* Passcode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE43A6252136E947000F178A /* Passcode.storyboard */; };
+		DE43A62A2136EA21000F178A /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE43A6282136EA21000F178A /* MyPage.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		DE43A6212136E79E000F178A /* DeviceOwnerLocalAuthenticatior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceOwnerLocalAuthenticatior.swift; sourceTree = "<group>"; };
 		DE43A6232136E7E1000F178A /* DeviceOwnerLocalAuthenticationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceOwnerLocalAuthenticationType.swift; sourceTree = "<group>"; };
 		DE43A6262136E947000F178A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Passcode.storyboard; sourceTree = "<group>"; };
+		DE43A6292136EA21000F178A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MyPage.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				DE43A5EA2136E29A000F178A /* Main.storyboard */,
 				DE43A5EF2136E29E000F178A /* LaunchScreen.storyboard */,
 				DE43A6252136E947000F178A /* Passcode.storyboard */,
+				DE43A6282136EA21000F178A /* MyPage.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE43A6272136E947000F178A /* Passcode.storyboard in Resources */,
+				DE43A62A2136EA21000F178A /* MyPage.storyboard in Resources */,
 				DE43A5F12136E29E000F178A /* LaunchScreen.storyboard in Resources */,
 				DE43A5EE2136E29E000F178A /* Assets.xcassets in Resources */,
 				DE43A5EC2136E29A000F178A /* Main.storyboard in Resources */,
@@ -395,6 +399,14 @@
 				DE43A6262136E947000F178A /* Base */,
 			);
 			name = Passcode.storyboard;
+			sourceTree = "<group>";
+		};
+		DE43A6282136EA21000F178A /* MyPage.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE43A6292136EA21000F178A /* Base */,
+			);
+			name = MyPage.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
