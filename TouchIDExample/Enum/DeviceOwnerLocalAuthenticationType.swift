@@ -15,12 +15,21 @@ enum DeviceOwnerLocalAuthenticationType {
 
     // MARK: - Function
 
-    func getLocalizedReason() -> String {
+    func getDescriptionTitle() -> String {
         switch self {
         case .authWithFaceID:
-            return "FaceIDを利用して画面ロックを解除します。"
+            return "FaceID"
         case .authWithTouchID:
-            return "FaceIDを利用して画面ロックを解除します。"
+            return "TouchID"
+        default:
+            return ""
+        }
+    }
+
+    func getLocalizedReason() -> String {
+        switch self {
+        case .authWithFaceID, .authWithTouchID:
+            return "\(self.getDescriptionTitle())を利用して画面ロックを解除します。"
         default:
             return ""
         }
