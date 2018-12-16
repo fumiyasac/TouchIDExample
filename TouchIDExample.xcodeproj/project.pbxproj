@@ -12,6 +12,9 @@
 		DE118E0221C67736003AFF8A /* GlobalTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE118E0021C67736003AFF8A /* GlobalTabBar.storyboard */; };
 		DE118E0421C67AD0003AFF8A /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE118E0321C67AD0003AFF8A /* SettingViewController.swift */; };
 		DE118E0621C67B10003AFF8A /* PasscodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE118E0521C67B10003AFF8A /* PasscodeViewController.swift */; };
+		DE118E0821C67FCD003AFF8A /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE118E0721C67FCD003AFF8A /* UICollectionViewExtension.swift */; };
+		DE118E0A21C68019003AFF8A /* NSObjectProtocolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE118E0921C68019003AFF8A /* NSObjectProtocolExtension.swift */; };
+		DE118E0C21C6A9F1003AFF8A /* StickyStyleFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE118E0B21C6A9F0003AFF8A /* StickyStyleFlowLayout.swift */; };
 		DE43A5E72136E29A000F178A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43A5E62136E29A000F178A /* AppDelegate.swift */; };
 		DE43A5E92136E29A000F178A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43A5E82136E29A000F178A /* MainViewController.swift */; };
 		DE43A5EC2136E29A000F178A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE43A5EA2136E29A000F178A /* Main.storyboard */; };
@@ -52,6 +55,9 @@
 		DE118E0121C67736003AFF8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/GlobalTabBar.storyboard; sourceTree = "<group>"; };
 		DE118E0321C67AD0003AFF8A /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		DE118E0521C67B10003AFF8A /* PasscodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeViewController.swift; sourceTree = "<group>"; };
+		DE118E0721C67FCD003AFF8A /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
+		DE118E0921C68019003AFF8A /* NSObjectProtocolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectProtocolExtension.swift; sourceTree = "<group>"; };
+		DE118E0B21C6A9F0003AFF8A /* StickyStyleFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyStyleFlowLayout.swift; sourceTree = "<group>"; };
 		DE43A5E32136E299000F178A /* TouchIDExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchIDExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE43A5E62136E29A000F178A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE43A5E82136E29A000F178A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -202,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				DE43A61E2136E696000F178A /* CustomViewBase.swift */,
+				DE118E0B21C6A9F0003AFF8A /* StickyStyleFlowLayout.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -209,8 +216,10 @@
 		DE43A6172136E331000F178A /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				DE43A61A2136E433000F178A /* UIViewControllerExtension.swift */,
+				DE118E0921C68019003AFF8A /* NSObjectProtocolExtension.swift */,
+				DE118E0721C67FCD003AFF8A /* UICollectionViewExtension.swift */,
 				DE43A61C2136E459000F178A /* UIColorExtension.swift */,
+				DE43A61A2136E433000F178A /* UIViewControllerExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -424,14 +433,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE118E0821C67FCD003AFF8A /* UICollectionViewExtension.swift in Sources */,
 				DE118DFF21C676D7003AFF8A /* GlobalTabBarController.swift in Sources */,
 				DE43A61F2136E696000F178A /* CustomViewBase.swift in Sources */,
 				DE118E0621C67B10003AFF8A /* PasscodeViewController.swift in Sources */,
 				DE43A5E92136E29A000F178A /* MainViewController.swift in Sources */,
 				DE43A6242136E7E1000F178A /* DeviceOwnerLocalAuthenticationType.swift in Sources */,
 				DE43A5E72136E29A000F178A /* AppDelegate.swift in Sources */,
+				DE118E0C21C6A9F1003AFF8A /* StickyStyleFlowLayout.swift in Sources */,
 				DE118E0421C67AD0003AFF8A /* SettingViewController.swift in Sources */,
 				DE43A61B2136E433000F178A /* UIViewControllerExtension.swift in Sources */,
+				DE118E0A21C68019003AFF8A /* NSObjectProtocolExtension.swift in Sources */,
 				DE43A61D2136E459000F178A /* UIColorExtension.swift in Sources */,
 				DE43A6222136E79E000F178A /* DeviceOwnerLocalAuthenticatior.swift in Sources */,
 			);
