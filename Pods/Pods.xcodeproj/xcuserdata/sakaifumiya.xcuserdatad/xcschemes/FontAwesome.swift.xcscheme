@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "29124FF4E0F9AB7495AA7588B0A1A107"
+               BlueprintIdentifier = "19A7318235A7BB5EE0FC5ABBBF760A1D"
                BuildableName = "FontAwesome_swift.framework"
                BlueprintName = "FontAwesome.swift"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "29124FF4E0F9AB7495AA7588B0A1A107"
+            BlueprintIdentifier = "19A7318235A7BB5EE0FC5ABBBF760A1D"
             BuildableName = "FontAwesome_swift.framework"
             BlueprintName = "FontAwesome.swift"
             ReferencedContainer = "container:Pods.xcodeproj">

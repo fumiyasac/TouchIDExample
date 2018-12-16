@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		77675A983766A55D4F7635BE /* Pods_TouchIDExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6807592E2F142F688066A4F1 /* Pods_TouchIDExample.framework */; };
+		DE118DFF21C676D7003AFF8A /* GlobalTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE118DFE21C676D7003AFF8A /* GlobalTabBarController.swift */; };
+		DE118E0221C67736003AFF8A /* GlobalTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE118E0021C67736003AFF8A /* GlobalTabBar.storyboard */; };
+		DE118E0421C67AD0003AFF8A /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE118E0321C67AD0003AFF8A /* SettingViewController.swift */; };
+		DE118E0621C67B10003AFF8A /* PasscodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE118E0521C67B10003AFF8A /* PasscodeViewController.swift */; };
 		DE43A5E72136E29A000F178A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43A5E62136E29A000F178A /* AppDelegate.swift */; };
 		DE43A5E92136E29A000F178A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43A5E82136E29A000F178A /* MainViewController.swift */; };
 		DE43A5EC2136E29A000F178A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE43A5EA2136E29A000F178A /* Main.storyboard */; };
@@ -21,7 +25,7 @@
 		DE43A6222136E79E000F178A /* DeviceOwnerLocalAuthenticatior.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43A6212136E79E000F178A /* DeviceOwnerLocalAuthenticatior.swift */; };
 		DE43A6242136E7E1000F178A /* DeviceOwnerLocalAuthenticationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43A6232136E7E1000F178A /* DeviceOwnerLocalAuthenticationType.swift */; };
 		DE43A6272136E947000F178A /* Passcode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE43A6252136E947000F178A /* Passcode.storyboard */; };
-		DE43A62A2136EA21000F178A /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE43A6282136EA21000F178A /* MyPage.storyboard */; };
+		DE43A62A2136EA21000F178A /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE43A6282136EA21000F178A /* Setting.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 /* Begin PBXFileReference section */
 		6807592E2F142F688066A4F1 /* Pods_TouchIDExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TouchIDExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78C94E25900CE379AD0D6E08 /* Pods-TouchIDExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchIDExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-TouchIDExample/Pods-TouchIDExample.release.xcconfig"; sourceTree = "<group>"; };
+		DE118DFE21C676D7003AFF8A /* GlobalTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalTabBarController.swift; sourceTree = "<group>"; };
+		DE118E0121C67736003AFF8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/GlobalTabBar.storyboard; sourceTree = "<group>"; };
+		DE118E0321C67AD0003AFF8A /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		DE118E0521C67B10003AFF8A /* PasscodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeViewController.swift; sourceTree = "<group>"; };
 		DE43A5E32136E299000F178A /* TouchIDExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchIDExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE43A5E62136E29A000F178A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE43A5E82136E29A000F178A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -63,7 +71,7 @@
 		DE43A6212136E79E000F178A /* DeviceOwnerLocalAuthenticatior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceOwnerLocalAuthenticatior.swift; sourceTree = "<group>"; };
 		DE43A6232136E7E1000F178A /* DeviceOwnerLocalAuthenticationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceOwnerLocalAuthenticationType.swift; sourceTree = "<group>"; };
 		DE43A6262136E947000F178A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Passcode.storyboard; sourceTree = "<group>"; };
-		DE43A6292136EA21000F178A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MyPage.storyboard; sourceTree = "<group>"; };
+		DE43A6292136EA21000F178A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Setting.storyboard; sourceTree = "<group>"; };
 		E521A077C113DED12568D92E /* Pods-TouchIDExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchIDExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TouchIDExample/Pods-TouchIDExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,6 +143,7 @@
 		DE43A5E52136E29A000F178A /* TouchIDExample */ = {
 			isa = PBXGroup;
 			children = (
+				DE43A5EF2136E29E000F178A /* LaunchScreen.storyboard */,
 				DE43A5F22136E29E000F178A /* Info.plist */,
 				DE43A5E62136E29A000F178A /* AppDelegate.swift */,
 				DE43A5ED2136E29E000F178A /* Assets.xcassets */,
@@ -170,7 +179,10 @@
 		DE43A6142136E2B6000F178A /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				DE118DFE21C676D7003AFF8A /* GlobalTabBarController.swift */,
 				DE43A5E82136E29A000F178A /* MainViewController.swift */,
+				DE118E0521C67B10003AFF8A /* PasscodeViewController.swift */,
+				DE118E0321C67AD0003AFF8A /* SettingViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -178,10 +190,10 @@
 		DE43A6152136E2CD000F178A /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				DE43A5EF2136E29E000F178A /* LaunchScreen.storyboard */,
+				DE118E0021C67736003AFF8A /* GlobalTabBar.storyboard */,
 				DE43A5EA2136E29A000F178A /* Main.storyboard */,
-				DE43A6282136EA21000F178A /* MyPage.storyboard */,
 				DE43A6252136E947000F178A /* Passcode.storyboard */,
+				DE43A6282136EA21000F178A /* Setting.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -237,7 +249,7 @@
 				DE43A5DF2136E299000F178A /* Sources */,
 				DE43A5E02136E299000F178A /* Frameworks */,
 				DE43A5E12136E299000F178A /* Resources */,
-				FF2C32EF643EED1AFA4FA13A /* [CP] Embed Pods Frameworks */,
+				4FDA5E6B60CE071A5EA1CA2E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -296,13 +308,16 @@
 				TargetAttributes = {
 					DE43A5E22136E299000F178A = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 					};
 					DE43A5F62136E29E000F178A = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = DE43A5E22136E299000F178A;
 					};
 					DE43A6012136E29E000F178A = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = DE43A5E22136E299000F178A;
 					};
 				};
@@ -333,8 +348,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE43A6272136E947000F178A /* Passcode.storyboard in Resources */,
-				DE43A62A2136EA21000F178A /* MyPage.storyboard in Resources */,
+				DE43A62A2136EA21000F178A /* Setting.storyboard in Resources */,
 				DE43A5F12136E29E000F178A /* LaunchScreen.storyboard in Resources */,
+				DE118E0221C67736003AFF8A /* GlobalTabBar.storyboard in Resources */,
 				DE43A5EE2136E29E000F178A /* Assets.xcassets in Resources */,
 				DE43A5EC2136E29A000F178A /* Main.storyboard in Resources */,
 			);
@@ -357,6 +373,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4FDA5E6B60CE071A5EA1CA2E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TouchIDExample/Pods-TouchIDExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
+				"${BUILT_PRODUCTS_DIR}/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework",
+				"${BUILT_PRODUCTS_DIR}/YNDropDownMenu/YNDropDownMenu.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMAnimatedTabBarController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YNDropDownMenu.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TouchIDExample/Pods-TouchIDExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A20614125EA40A1A253C3AF4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -375,30 +417,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FF2C32EF643EED1AFA4FA13A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TouchIDExample/Pods-TouchIDExample-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
-				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
-				"${BUILT_PRODUCTS_DIR}/Popover/Popover.framework",
-				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Popover.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TouchIDExample/Pods-TouchIDExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -406,10 +424,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE118DFF21C676D7003AFF8A /* GlobalTabBarController.swift in Sources */,
 				DE43A61F2136E696000F178A /* CustomViewBase.swift in Sources */,
+				DE118E0621C67B10003AFF8A /* PasscodeViewController.swift in Sources */,
 				DE43A5E92136E29A000F178A /* MainViewController.swift in Sources */,
 				DE43A6242136E7E1000F178A /* DeviceOwnerLocalAuthenticationType.swift in Sources */,
 				DE43A5E72136E29A000F178A /* AppDelegate.swift in Sources */,
+				DE118E0421C67AD0003AFF8A /* SettingViewController.swift in Sources */,
 				DE43A61B2136E433000F178A /* UIViewControllerExtension.swift in Sources */,
 				DE43A61D2136E459000F178A /* UIColorExtension.swift in Sources */,
 				DE43A6222136E79E000F178A /* DeviceOwnerLocalAuthenticatior.swift in Sources */,
@@ -448,6 +469,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		DE118E0021C67736003AFF8A /* GlobalTabBar.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE118E0121C67736003AFF8A /* Base */,
+			);
+			name = GlobalTabBar.storyboard;
+			sourceTree = "<group>";
+		};
 		DE43A5EA2136E29A000F178A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -472,12 +501,12 @@
 			name = Passcode.storyboard;
 			sourceTree = "<group>";
 		};
-		DE43A6282136EA21000F178A /* MyPage.storyboard */ = {
+		DE43A6282136EA21000F178A /* Setting.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DE43A6292136EA21000F178A /* Base */,
 			);
-			name = MyPage.storyboard;
+			name = Setting.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -606,10 +635,13 @@
 				DEVELOPMENT_TEAM = S5BF5553KY;
 				INFOPLIST_FILE = TouchIDExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.just1factory.TouchIDExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -623,10 +655,13 @@
 				DEVELOPMENT_TEAM = S5BF5553KY;
 				INFOPLIST_FILE = TouchIDExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.just1factory.TouchIDExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -639,10 +674,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5BF5553KY;
 				INFOPLIST_FILE = TouchIDExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.just1factory.TouchIDExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TouchIDExample.app/TouchIDExample";
 			};
@@ -656,10 +695,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5BF5553KY;
 				INFOPLIST_FILE = TouchIDExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.just1factory.TouchIDExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TouchIDExample.app/TouchIDExample";
 			};
@@ -672,10 +715,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5BF5553KY;
 				INFOPLIST_FILE = TouchIDExampleUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.just1factory.TouchIDExampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TouchIDExample;
 			};
@@ -688,10 +735,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5BF5553KY;
 				INFOPLIST_FILE = TouchIDExampleUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.just1factory.TouchIDExampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TouchIDExample;
 			};

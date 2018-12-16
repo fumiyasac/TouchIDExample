@@ -7,7 +7,6 @@ target 'TouchIDExample' do
 
   # Pods for TouchIDExample
   pod 'FontAwesome.swift'
-  pod 'KeychainAccess'
-  pod 'SVProgressHUD'
-  pod 'Popover'
+  pod 'RAMAnimatedTabBarController'
+  pod 'YNDropDownMenu'
 end

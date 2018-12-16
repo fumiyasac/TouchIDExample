@@ -1,28 +1,24 @@
 PODS:
-  - FontAwesome.swift (1.4.3)
-  - KeychainAccess (3.1.1)
-  - Popover (1.2.0)
-  - SVProgressHUD (2.2.5)
+  - FontAwesome.swift (1.4.6)
+  - RAMAnimatedTabBarController (4.0.1)
+  - YNDropDownMenu (3.0.3)
 
 DEPENDENCIES:
   - FontAwesome.swift
-  - KeychainAccess
-  - Popover
-  - SVProgressHUD
+  - RAMAnimatedTabBarController
+  - YNDropDownMenu
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - FontAwesome.swift
-    - KeychainAccess
-    - Popover
-    - SVProgressHUD
+    - RAMAnimatedTabBarController
+    - YNDropDownMenu
 
 SPEC CHECKSUMS:
-  FontAwesome.swift: 4b9ba1e1f3418a626f3ab67b230856ab6eb4860f
-  KeychainAccess: 7bd430028059754a3debab3cfc0bd1fc7fb85df3
-  Popover: 28c1ac8e937ab2b3965bd2da7dd18324357abc41
-  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  FontAwesome.swift: 18fb500c0decc2bbfadf2ae16a936704ec2c49bd
+  RAMAnimatedTabBarController: 677d6f7ec7e88b1089486f4db49b0a5067e8ad1c
+  YNDropDownMenu: ba608568d4ac0a37385142f723da8cfc29c7ff11
 
-PODFILE CHECKSUM: 305a01dff3f78b7ab32bc731d2108c4dee972340
+PODFILE CHECKSUM: de3c7252e145aef7f2020da1861bbda86409f4eb
 
 COCOAPODS: 1.5.3
