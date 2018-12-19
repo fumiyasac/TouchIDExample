@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SampleCollectionViewCell" customModule="TouchIDExample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SqA-H9-lIn">
+                        <rect key="frame" x="8" y="8" width="359" height="124"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xh2-Cy-RTh">
+                                <rect key="frame" x="8" y="37" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.84313725490000002" green="0.84313725490000002" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="HJ8-XK-pgv"/>
+                                    <constraint firstAttribute="height" constant="80" id="Rcq-vh-g9A"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="無駄遣いの記録No: 36番目" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAs-qm-nvY">
+                                <rect key="frame" x="8" y="8" width="343" height="12"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="12"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018/09/11" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eB5-WK-11B">
+                                <rect key="frame" x="100" y="37" width="251" height="10"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="10"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥11,678" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azs-ky-6h6">
+                                <rect key="frame" x="100" y="85" width="251" height="31"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="31"/>
+                                <color key="textColor" red="0.0" green="0.65132592430000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="やらかした買い物名が入ります" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMJ-I8-3Fn">
+                                <rect key="frame" x="100" y="59" width="251" height="12"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fMJ-I8-3Fn" firstAttribute="leading" secondItem="xh2-Cy-RTh" secondAttribute="trailing" constant="12" id="8qE-wx-qYO"/>
+                            <constraint firstItem="azs-ky-6h6" firstAttribute="leading" secondItem="xh2-Cy-RTh" secondAttribute="trailing" constant="12" id="9gB-eM-QY9"/>
+                            <constraint firstItem="kAs-qm-nvY" firstAttribute="leading" secondItem="SqA-H9-lIn" secondAttribute="leading" constant="8" id="D4Q-TT-Bcq"/>
+                            <constraint firstAttribute="trailing" secondItem="fMJ-I8-3Fn" secondAttribute="trailing" constant="8" id="GiJ-jv-Skg"/>
+                            <constraint firstAttribute="trailing" secondItem="azs-ky-6h6" secondAttribute="trailing" constant="8" id="L9e-Xp-3XU"/>
+                            <constraint firstItem="eB5-WK-11B" firstAttribute="leading" secondItem="xh2-Cy-RTh" secondAttribute="trailing" constant="12" id="UJo-ce-8as"/>
+                            <constraint firstAttribute="trailing" secondItem="eB5-WK-11B" secondAttribute="trailing" constant="8" id="UqA-9F-prA"/>
+                            <constraint firstItem="xh2-Cy-RTh" firstAttribute="top" secondItem="kAs-qm-nvY" secondAttribute="bottom" constant="17" id="VQt-yi-Hkd"/>
+                            <constraint firstItem="eB5-WK-11B" firstAttribute="top" secondItem="kAs-qm-nvY" secondAttribute="bottom" constant="17" id="VgI-6t-Ajj"/>
+                            <constraint firstItem="xh2-Cy-RTh" firstAttribute="leading" secondItem="SqA-H9-lIn" secondAttribute="leading" constant="8" id="WLX-8X-4JK"/>
+                            <constraint firstItem="kAs-qm-nvY" firstAttribute="top" secondItem="SqA-H9-lIn" secondAttribute="top" constant="8" id="X0X-kM-pnX"/>
+                            <constraint firstAttribute="trailing" secondItem="kAs-qm-nvY" secondAttribute="trailing" constant="8" id="Z03-sd-dDQ"/>
+                            <constraint firstItem="fMJ-I8-3Fn" firstAttribute="top" secondItem="eB5-WK-11B" secondAttribute="bottom" constant="12" id="eOb-P9-n9m"/>
+                            <constraint firstAttribute="bottom" secondItem="azs-ky-6h6" secondAttribute="bottom" constant="8" id="mMX-Sq-ios"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="SqA-H9-lIn" secondAttribute="bottom" constant="8" id="3el-pc-m4j"/>
+                <constraint firstItem="SqA-H9-lIn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="9qf-B4-7OY"/>
+                <constraint firstAttribute="trailing" secondItem="SqA-H9-lIn" secondAttribute="trailing" constant="8" id="ZoH-eD-1Dj"/>
+                <constraint firstItem="SqA-H9-lIn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="cSo-kf-lGX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+        </collectionViewCell>
+    </objects>
+</document>

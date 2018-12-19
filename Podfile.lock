@@ -1,24 +1,16 @@
 PODS:
   - FontAwesome.swift (1.4.6)
-  - RAMAnimatedTabBarController (4.0.1)
-  - YNDropDownMenu (3.0.3)
 
 DEPENDENCIES:
   - FontAwesome.swift
-  - RAMAnimatedTabBarController
-  - YNDropDownMenu
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - FontAwesome.swift
-    - RAMAnimatedTabBarController
-    - YNDropDownMenu
 
 SPEC CHECKSUMS:
   FontAwesome.swift: 18fb500c0decc2bbfadf2ae16a936704ec2c49bd
-  RAMAnimatedTabBarController: 677d6f7ec7e88b1089486f4db49b0a5067e8ad1c
-  YNDropDownMenu: ba608568d4ac0a37385142f723da8cfc29c7ff11
 
-PODFILE CHECKSUM: de3c7252e145aef7f2020da1861bbda86409f4eb
+PODFILE CHECKSUM: 8d2fc118dba02e959406ad3f4adf808653dc8bdd
 
 COCOAPODS: 1.5.3

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nFW-sf-B6h">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tB8-jN-Z6D">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,20 +10,159 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="uS6-KP-Odr">
+            <objects>
+                <navigationController id="tB8-jN-Z6D" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="rIg-CJ-U6D">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nFW-sf-B6h" kind="relationship" relationship="rootViewController" id="gOf-MG-TlY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8AA-Yf-ng9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1007" y="-370"/>
+        </scene>
         <!--Setting View Controller-->
         <scene sceneID="3DL-y6-gSx">
             <objects>
                 <viewController id="nFW-sf-B6h" customClass="SettingViewController" customModule="TouchIDExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Ry-uR-yOK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zjS-ac-pYo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="n8n-IZ-0h7">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="202"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t2f-cQ-8db">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="52"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pu-XN-DKI">
+                                                        <rect key="frame" x="16" y="12" width="343" height="28"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="こちらはパスコードロック機能のサンプルアプリになります。簡単なサンプルになりますが、挙動等をお試し頂ければ幸いです。">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <font key="NSFont" size="11" name="HiraMaruProN-W4"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="1pu-XN-DKI" secondAttribute="bottom" constant="12" id="3Bt-UF-hiU"/>
+                                                    <constraint firstAttribute="trailing" secondItem="1pu-XN-DKI" secondAttribute="trailing" constant="16" id="7dT-Ye-a3A"/>
+                                                    <constraint firstAttribute="height" priority="250" constant="34" id="RQn-3D-xJH"/>
+                                                    <constraint firstItem="1pu-XN-DKI" firstAttribute="leading" secondItem="t2f-cQ-8db" secondAttribute="leading" constant="16" id="Zyg-tR-Cxa"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="g9X-tF-BCr"/>
+                                                    <constraint firstItem="1pu-XN-DKI" firstAttribute="top" secondItem="t2f-cQ-8db" secondAttribute="top" constant="12" id="zh4-G7-Bot"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UoK-fN-tpp">
+                                                <rect key="frame" x="0.0" y="52" width="375" height="48"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="パスコードロック使用状況" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bw-4V-vHJ">
+                                                        <rect key="frame" x="16" y="17" width="278" height="14"/>
+                                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l3D-EM-1eS">
+                                                        <rect key="frame" x="310" y="8.5" width="51" height="31"/>
+                                                        <color key="onTintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </switch>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="1bw-4V-vHJ" firstAttribute="leading" secondItem="UoK-fN-tpp" secondAttribute="leading" constant="16" id="AsG-4g-hDf"/>
+                                                    <constraint firstItem="l3D-EM-1eS" firstAttribute="leading" secondItem="1bw-4V-vHJ" secondAttribute="trailing" constant="16" id="FYR-OV-8sU"/>
+                                                    <constraint firstItem="l3D-EM-1eS" firstAttribute="centerY" secondItem="UoK-fN-tpp" secondAttribute="centerY" id="a1V-e3-c7S"/>
+                                                    <constraint firstItem="1bw-4V-vHJ" firstAttribute="centerY" secondItem="UoK-fN-tpp" secondAttribute="centerY" id="mcF-Kk-FfQ"/>
+                                                    <constraint firstAttribute="height" constant="48" id="t91-v8-Tel"/>
+                                                    <constraint firstAttribute="trailing" secondItem="l3D-EM-1eS" secondAttribute="trailing" constant="16" id="wd5-hK-ebV"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z91-kC-fnU">
+                                                <rect key="frame" x="0.0" y="100" width="375" height="102"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mtk-Rp-b6B">
+                                                        <rect key="frame" x="12" y="8" width="351" height="28"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="※もしTouchIDやFaceIDをご利用している場合は、パスコードロックの解除に利用できますのでよろしければご活用ください。">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <font key="NSFont" size="11" name="HiraMaruProN-W4"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYz-RB-MkV">
+                                                        <rect key="frame" x="52.5" y="48" width="270" height="42"/>
+                                                        <color key="backgroundColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="270" id="Tun-Jy-1TD"/>
+                                                            <constraint firstAttribute="height" constant="42" id="YrV-mT-2fk"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="14"/>
+                                                        <state key="normal" title="TouchID / FaceIDを設定を確認する">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="RYz-RB-MkV" firstAttribute="top" secondItem="Mtk-Rp-b6B" secondAttribute="bottom" constant="12" id="2cr-Fh-5e3"/>
+                                                    <constraint firstAttribute="bottom" secondItem="RYz-RB-MkV" secondAttribute="bottom" constant="12" id="6rG-8t-sxq"/>
+                                                    <constraint firstItem="RYz-RB-MkV" firstAttribute="centerX" secondItem="Z91-kC-fnU" secondAttribute="centerX" id="8f3-DO-KLX"/>
+                                                    <constraint firstItem="Mtk-Rp-b6B" firstAttribute="top" secondItem="Z91-kC-fnU" secondAttribute="top" constant="8" id="AHO-C5-vxa"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="CPt-4X-adp"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Mtk-Rp-b6B" secondAttribute="trailing" constant="12" id="JJq-8h-ecD"/>
+                                                    <constraint firstItem="Mtk-Rp-b6B" firstAttribute="leading" secondItem="Z91-kC-fnU" secondAttribute="leading" constant="12" id="aSx-Fg-0u5"/>
+                                                    <constraint firstAttribute="height" priority="250" constant="100" id="jkr-7R-Scv"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="n8n-IZ-0h7" secondAttribute="bottom" id="IWE-5z-1RS"/>
+                                    <constraint firstAttribute="trailing" secondItem="n8n-IZ-0h7" secondAttribute="trailing" id="JgQ-MN-qBS"/>
+                                    <constraint firstItem="n8n-IZ-0h7" firstAttribute="width" secondItem="zjS-ac-pYo" secondAttribute="width" id="UIe-yE-zSZ"/>
+                                    <constraint firstItem="n8n-IZ-0h7" firstAttribute="leading" secondItem="zjS-ac-pYo" secondAttribute="leading" id="qiL-Wl-FJe"/>
+                                    <constraint firstItem="n8n-IZ-0h7" firstAttribute="top" secondItem="zjS-ac-pYo" secondAttribute="top" id="sNQ-7Y-oLA"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zjS-ac-pYo" firstAttribute="leading" secondItem="PmV-Hz-kK1" secondAttribute="leading" id="IgM-0p-ZQd"/>
+                            <constraint firstItem="PmV-Hz-kK1" firstAttribute="trailing" secondItem="zjS-ac-pYo" secondAttribute="trailing" id="Qeg-0N-kLI"/>
+                            <constraint firstItem="zjS-ac-pYo" firstAttribute="top" secondItem="PmV-Hz-kK1" secondAttribute="top" id="vsR-cZ-Nrr"/>
+                            <constraint firstItem="PmV-Hz-kK1" firstAttribute="bottom" secondItem="zjS-ac-pYo" secondAttribute="bottom" id="xcL-MW-5Ip"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="PmV-Hz-kK1"/>
                     </view>
+                    <navigationItem key="navigationItem" id="cTl-hq-lsr"/>
+                    <connections>
+                        <outlet property="openSettingButton" destination="RYz-RB-MkV" id="hSc-pS-ORW"/>
+                        <outlet property="passcodeSwitch" destination="l3D-EM-1eS" id="R0J-eN-d1A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fRN-eW-7NL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-249" y="-370"/>
+            <point key="canvasLocation" x="-250.40000000000001" y="-370.16491754122939"/>
         </scene>
     </scenes>
 </document>

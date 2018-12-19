@@ -7,6 +7,4 @@ target 'TouchIDExample' do
 
   # Pods for TouchIDExample
   pod 'FontAwesome.swift'
-  pod 'RAMAnimatedTabBarController'
-  pod 'YNDropDownMenu'
 end
