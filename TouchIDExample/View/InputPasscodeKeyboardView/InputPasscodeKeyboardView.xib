@@ -10,7 +10,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InputPasscodeKeyboardView" customModule="TouchIDExample" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InputPasscodeKeyboardView" customModule="TouchIDExample" customModuleProvider="target">
+            <connections>
+                <outlet property="deletePasscodeNumberButton" destination="drI-SX-VQ8" id="Loe-NC-SWe"/>
+                <outlet property="executeLocalAuthenticationButton" destination="bpt-IZ-QNM" id="omE-9N-E6a"/>
+                <outletCollection property="inputPasscodeNumberButtons" destination="uj8-O3-5oN" collectionClass="NSMutableArray" id="shc-D5-mrr"/>
+                <outletCollection property="inputPasscodeNumberButtons" destination="E4K-FH-psd" collectionClass="NSMutableArray" id="UpC-xU-gig"/>
+                <outletCollection property="inputPasscodeNumberButtons" destination="8MS-5j-Xth" collectionClass="NSMutableArray" id="jSA-NK-QDC"/>
+                <outletCollection property="inputPasscodeNumberButtons" destination="euV-sh-CuK" collectionClass="NSMutableArray" id="hwA-iu-BzS"/>
+                <outletCollection property="inputPasscodeNumberButtons" destination="drt-g3-XHx" collectionClass="NSMutableArray" id="E7o-52-KFq"/>
+                <outletCollection property="inputPasscodeNumberButtons" destination="BIh-ni-Wed" collectionClass="NSMutableArray" id="lrh-JH-QRF"/>
+                <outletCollection property="inputPasscodeNumberButtons" destination="Klo-aS-C3C" collectionClass="NSMutableArray" id="c65-Am-U2X"/>
+                <outletCollection property="inputPasscodeNumberButtons" destination="9EZ-na-Wqc" collectionClass="NSMutableArray" id="KP7-fq-ZQN"/>
+                <outletCollection property="inputPasscodeNumberButtons" destination="TY4-mG-rgV" collectionClass="NSMutableArray" id="hPy-HJ-3i4"/>
+                <outletCollection property="inputPasscodeNumberButtons" destination="kuP-9n-3yk" collectionClass="NSMutableArray" id="928-EM-tUh"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="375" height="240"/>
@@ -29,26 +44,26 @@
                                             <rect key="frame" x="0.0" y="0.0" width="124.5" height="59.5"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UK0-au-C8g">
-                                                    <rect key="frame" x="44" y="11.5" width="36" height="36"/>
+                                                    <rect key="frame" x="38" y="9.5" width="48" height="40"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNd-Jb-kPf">
-                                                            <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="48" height="40"/>
                                                             <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="16"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstItem="PNd-Jb-kPf" firstAttribute="leading" secondItem="UK0-au-C8g" secondAttribute="leading" id="1gy-bv-1yW"/>
                                                         <constraint firstAttribute="trailing" secondItem="PNd-Jb-kPf" secondAttribute="trailing" id="4oU-06-8kH"/>
                                                         <constraint firstAttribute="bottom" secondItem="PNd-Jb-kPf" secondAttribute="bottom" id="eGS-BJ-RfL"/>
-                                                        <constraint firstAttribute="width" constant="36" id="nri-O7-Q2s"/>
+                                                        <constraint firstAttribute="width" constant="48" id="nri-O7-Q2s"/>
                                                         <constraint firstItem="PNd-Jb-kPf" firstAttribute="top" secondItem="UK0-au-C8g" secondAttribute="top" id="pPB-fz-QUd"/>
-                                                        <constraint firstAttribute="height" constant="36" id="yyK-ba-bpI"/>
+                                                        <constraint firstAttribute="height" constant="40" id="yyK-ba-bpI"/>
                                                     </constraints>
                                                 </view>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uj8-O3-5oN">
+                                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uj8-O3-5oN">
                                                     <rect key="frame" x="0.0" y="0.0" width="124.5" height="59.5"/>
                                                 </button>
                                             </subviews>
@@ -66,26 +81,26 @@
                                             <rect key="frame" x="125.5" y="0.0" width="124" height="59.5"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mwD-er-rkf">
-                                                    <rect key="frame" x="44" y="11.5" width="36" height="36"/>
+                                                    <rect key="frame" x="38" y="9.5" width="48" height="40"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYv-NE-lft">
-                                                            <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="48" height="40"/>
                                                             <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="16"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstItem="gYv-NE-lft" firstAttribute="top" secondItem="mwD-er-rkf" secondAttribute="top" id="3T8-3d-vhu"/>
                                                         <constraint firstItem="gYv-NE-lft" firstAttribute="leading" secondItem="mwD-er-rkf" secondAttribute="leading" id="7XF-Sl-qGS"/>
-                                                        <constraint firstAttribute="height" constant="36" id="Ddy-Q7-6Px"/>
+                                                        <constraint firstAttribute="height" constant="40" id="Ddy-Q7-6Px"/>
                                                         <constraint firstAttribute="bottom" secondItem="gYv-NE-lft" secondAttribute="bottom" id="RE7-dc-G0P"/>
                                                         <constraint firstAttribute="trailing" secondItem="gYv-NE-lft" secondAttribute="trailing" id="Yb3-iR-cDP"/>
-                                                        <constraint firstAttribute="width" constant="36" id="jPh-j3-LAf"/>
+                                                        <constraint firstAttribute="width" constant="48" id="jPh-j3-LAf"/>
                                                     </constraints>
                                                 </view>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4K-FH-psd">
+                                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4K-FH-psd">
                                                     <rect key="frame" x="0.0" y="0.0" width="124" height="59.5"/>
                                                 </button>
                                             </subviews>
@@ -103,26 +118,26 @@
                                             <rect key="frame" x="250.5" y="0.0" width="124.5" height="59.5"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VP6-VA-GMa">
-                                                    <rect key="frame" x="44.5" y="11.5" width="36" height="36"/>
+                                                    <rect key="frame" x="38.5" y="9.5" width="48" height="40"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUh-Li-V6l">
-                                                            <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="48" height="40"/>
                                                             <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="16"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="36" id="J0L-cQ-xfB"/>
+                                                        <constraint firstAttribute="width" constant="48" id="J0L-cQ-xfB"/>
                                                         <constraint firstAttribute="bottom" secondItem="fUh-Li-V6l" secondAttribute="bottom" id="Lff-cH-ByJ"/>
                                                         <constraint firstAttribute="trailing" secondItem="fUh-Li-V6l" secondAttribute="trailing" id="cBD-de-dYc"/>
                                                         <constraint firstItem="fUh-Li-V6l" firstAttribute="top" secondItem="VP6-VA-GMa" secondAttribute="top" id="d7o-dR-bzp"/>
                                                         <constraint firstItem="fUh-Li-V6l" firstAttribute="leading" secondItem="VP6-VA-GMa" secondAttribute="leading" id="pb9-y5-XbM"/>
-                                                        <constraint firstAttribute="height" constant="36" id="sKq-D5-SHI"/>
+                                                        <constraint firstAttribute="height" constant="40" id="sKq-D5-SHI"/>
                                                     </constraints>
                                                 </view>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8MS-5j-Xth">
+                                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8MS-5j-Xth">
                                                     <rect key="frame" x="0.0" y="0.0" width="124.5" height="59.5"/>
                                                 </button>
                                             </subviews>
@@ -145,26 +160,26 @@
                                             <rect key="frame" x="0.0" y="0.0" width="124.5" height="59"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JBA-RR-hbo">
-                                                    <rect key="frame" x="44" y="11.5" width="36" height="36"/>
+                                                    <rect key="frame" x="38" y="9.5" width="48" height="40"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jBU-Hg-uXV">
-                                                            <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="48" height="40"/>
                                                             <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="16"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="36" id="9ux-Nt-FrB"/>
+                                                        <constraint firstAttribute="width" constant="48" id="9ux-Nt-FrB"/>
                                                         <constraint firstAttribute="trailing" secondItem="jBU-Hg-uXV" secondAttribute="trailing" id="D9a-Nl-bTa"/>
                                                         <constraint firstItem="jBU-Hg-uXV" firstAttribute="leading" secondItem="JBA-RR-hbo" secondAttribute="leading" id="Mbg-X8-Zzr"/>
                                                         <constraint firstAttribute="bottom" secondItem="jBU-Hg-uXV" secondAttribute="bottom" id="YFx-Ke-g2l"/>
-                                                        <constraint firstAttribute="height" constant="36" id="Z5V-OQ-rmL"/>
+                                                        <constraint firstAttribute="height" constant="40" id="Z5V-OQ-rmL"/>
                                                         <constraint firstItem="jBU-Hg-uXV" firstAttribute="top" secondItem="JBA-RR-hbo" secondAttribute="top" id="Z7d-Sa-3tn"/>
                                                     </constraints>
                                                 </view>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euV-sh-CuK">
+                                                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euV-sh-CuK">
                                                     <rect key="frame" x="0.0" y="0.0" width="124.5" height="59"/>
                                                 </button>
                                             </subviews>
@@ -182,26 +197,26 @@
                                             <rect key="frame" x="125.5" y="0.0" width="124" height="59"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lZU-Sc-RyA">
-                                                    <rect key="frame" x="44" y="11.5" width="36" height="36"/>
+                                                    <rect key="frame" x="38" y="9.5" width="48" height="40"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckv-Wu-w4u">
-                                                            <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="48" height="40"/>
                                                             <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="16"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="trailing" secondItem="ckv-Wu-w4u" secondAttribute="trailing" id="69Q-Q3-oAp"/>
                                                         <constraint firstItem="ckv-Wu-w4u" firstAttribute="leading" secondItem="lZU-Sc-RyA" secondAttribute="leading" id="6Qd-49-6KL"/>
-                                                        <constraint firstAttribute="height" constant="36" id="YJ1-pT-ENF"/>
+                                                        <constraint firstAttribute="height" constant="40" id="YJ1-pT-ENF"/>
                                                         <constraint firstItem="ckv-Wu-w4u" firstAttribute="top" secondItem="lZU-Sc-RyA" secondAttribute="top" id="Zrf-Iq-hxq"/>
-                                                        <constraint firstAttribute="width" constant="36" id="oXK-0t-Lpk"/>
+                                                        <constraint firstAttribute="width" constant="48" id="oXK-0t-Lpk"/>
                                                         <constraint firstAttribute="bottom" secondItem="ckv-Wu-w4u" secondAttribute="bottom" id="vbz-bD-one"/>
                                                     </constraints>
                                                 </view>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drt-g3-XHx">
+                                                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drt-g3-XHx">
                                                     <rect key="frame" x="0.0" y="0.0" width="124" height="59"/>
                                                 </button>
                                             </subviews>
@@ -219,26 +234,26 @@
                                             <rect key="frame" x="250.5" y="0.0" width="124.5" height="59"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o8J-8t-2vB">
-                                                    <rect key="frame" x="44.5" y="11.5" width="36" height="36"/>
+                                                    <rect key="frame" x="38.5" y="9.5" width="48" height="40"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvh-mT-gmL">
-                                                            <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="48" height="40"/>
                                                             <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="16"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstItem="cvh-mT-gmL" firstAttribute="top" secondItem="o8J-8t-2vB" secondAttribute="top" id="KBw-Vd-CaO"/>
                                                         <constraint firstAttribute="trailing" secondItem="cvh-mT-gmL" secondAttribute="trailing" id="Kr2-dE-MTg"/>
-                                                        <constraint firstAttribute="height" constant="36" id="M0D-IN-JAp"/>
-                                                        <constraint firstAttribute="width" constant="36" id="huo-tj-SzD"/>
+                                                        <constraint firstAttribute="height" constant="40" id="M0D-IN-JAp"/>
+                                                        <constraint firstAttribute="width" constant="48" id="huo-tj-SzD"/>
                                                         <constraint firstItem="cvh-mT-gmL" firstAttribute="leading" secondItem="o8J-8t-2vB" secondAttribute="leading" id="i4M-Zu-i7Z"/>
                                                         <constraint firstAttribute="bottom" secondItem="cvh-mT-gmL" secondAttribute="bottom" id="oiO-oM-Xht"/>
                                                     </constraints>
                                                 </view>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BIh-ni-Wed">
+                                                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BIh-ni-Wed">
                                                     <rect key="frame" x="0.0" y="0.0" width="124.5" height="59"/>
                                                 </button>
                                             </subviews>
@@ -261,26 +276,26 @@
                                             <rect key="frame" x="0.0" y="0.0" width="124.5" height="59.5"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3gt-Km-fUc">
-                                                    <rect key="frame" x="44" y="11.5" width="36" height="36"/>
+                                                    <rect key="frame" x="38" y="9.5" width="48" height="40"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgW-Wk-tcX">
-                                                            <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="48" height="40"/>
                                                             <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="16"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="trailing" secondItem="kgW-Wk-tcX" secondAttribute="trailing" id="6Lc-uL-6XW"/>
                                                         <constraint firstItem="kgW-Wk-tcX" firstAttribute="top" secondItem="3gt-Km-fUc" secondAttribute="top" id="B5R-n6-NCr"/>
-                                                        <constraint firstAttribute="height" constant="36" id="GI3-sr-Rp9"/>
+                                                        <constraint firstAttribute="height" constant="40" id="GI3-sr-Rp9"/>
                                                         <constraint firstItem="kgW-Wk-tcX" firstAttribute="leading" secondItem="3gt-Km-fUc" secondAttribute="leading" id="ZOy-en-tnC"/>
-                                                        <constraint firstAttribute="width" constant="36" id="fad-35-nae"/>
+                                                        <constraint firstAttribute="width" constant="48" id="fad-35-nae"/>
                                                         <constraint firstAttribute="bottom" secondItem="kgW-Wk-tcX" secondAttribute="bottom" id="kKd-j2-XLf"/>
                                                     </constraints>
                                                 </view>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Klo-aS-C3C">
+                                                <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Klo-aS-C3C">
                                                     <rect key="frame" x="0.0" y="0.0" width="124.5" height="59.5"/>
                                                 </button>
                                             </subviews>
@@ -298,26 +313,26 @@
                                             <rect key="frame" x="125.5" y="0.0" width="124" height="59.5"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8dw-e0-Ewb">
-                                                    <rect key="frame" x="44" y="11.5" width="36" height="36"/>
+                                                    <rect key="frame" x="38" y="9.5" width="48" height="40"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pW-20-imC">
-                                                            <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="48" height="40"/>
                                                             <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="16"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="36" id="8Z6-zL-UqQ"/>
+                                                        <constraint firstAttribute="width" constant="48" id="8Z6-zL-UqQ"/>
                                                         <constraint firstItem="2pW-20-imC" firstAttribute="leading" secondItem="8dw-e0-Ewb" secondAttribute="leading" id="MEy-A9-cSa"/>
                                                         <constraint firstAttribute="trailing" secondItem="2pW-20-imC" secondAttribute="trailing" id="XOk-my-xEM"/>
                                                         <constraint firstItem="2pW-20-imC" firstAttribute="top" secondItem="8dw-e0-Ewb" secondAttribute="top" id="eRk-Dv-Htx"/>
-                                                        <constraint firstAttribute="height" constant="36" id="ny0-SS-UYW"/>
+                                                        <constraint firstAttribute="height" constant="40" id="ny0-SS-UYW"/>
                                                         <constraint firstAttribute="bottom" secondItem="2pW-20-imC" secondAttribute="bottom" id="qkq-9L-hdF"/>
                                                     </constraints>
                                                 </view>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9EZ-na-Wqc">
+                                                <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9EZ-na-Wqc">
                                                     <rect key="frame" x="0.0" y="0.0" width="124" height="59.5"/>
                                                 </button>
                                             </subviews>
@@ -335,26 +350,26 @@
                                             <rect key="frame" x="250.5" y="0.0" width="124.5" height="59.5"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1pz-hK-dmo">
-                                                    <rect key="frame" x="44.5" y="11.5" width="36" height="36"/>
+                                                    <rect key="frame" x="38.5" y="9.5" width="48" height="40"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2f-cG-aWq">
-                                                            <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="48" height="40"/>
                                                             <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="16"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstItem="r2f-cG-aWq" firstAttribute="leading" secondItem="1pz-hK-dmo" secondAttribute="leading" id="EkA-tB-olc"/>
                                                         <constraint firstItem="r2f-cG-aWq" firstAttribute="top" secondItem="1pz-hK-dmo" secondAttribute="top" id="Imb-Ve-Vlb"/>
-                                                        <constraint firstAttribute="width" constant="36" id="QkP-SX-EVB"/>
-                                                        <constraint firstAttribute="height" constant="36" id="dgG-9z-oiL"/>
+                                                        <constraint firstAttribute="width" constant="48" id="QkP-SX-EVB"/>
+                                                        <constraint firstAttribute="height" constant="40" id="dgG-9z-oiL"/>
                                                         <constraint firstAttribute="bottom" secondItem="r2f-cG-aWq" secondAttribute="bottom" id="ek7-dx-rWW"/>
                                                         <constraint firstAttribute="trailing" secondItem="r2f-cG-aWq" secondAttribute="trailing" id="wbJ-E1-aqa"/>
                                                     </constraints>
                                                 </view>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TY4-mG-rgV">
+                                                <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TY4-mG-rgV">
                                                     <rect key="frame" x="0.0" y="0.0" width="124.5" height="59.5"/>
                                                 </button>
                                             </subviews>
@@ -376,26 +391,36 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tc6-pO-fD3">
                                             <rect key="frame" x="0.0" y="0.0" width="124.5" height="59"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0C-Ey-0Zw">
-                                                    <rect key="frame" x="44" y="11.5" width="36" height="36"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="36" id="7M6-qm-WtA"/>
-                                                        <constraint firstAttribute="height" constant="36" id="fy1-3F-hs4"/>
-                                                    </constraints>
-                                                    <attributedString key="attributedText">
-                                                        <fragment>
-                                                            <string key="content">FaceID
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p0S-pS-jUe">
+                                                    <rect key="frame" x="38" y="9.5" width="48" height="40"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0C-Ey-0Zw">
+                                                            <rect key="frame" x="0.0" y="0.0" width="48" height="40"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment>
+                                                                    <string key="content">FaceID
 or
 TouchID</string>
-                                                            <attributes>
-                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                <font key="NSFont" size="8" name="HiraMaruProN-W4"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                                    <attributes>
+                                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                        <font key="NSFont" size="10" name="HiraMaruProN-W4"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="i0C-Ey-0Zw" firstAttribute="leading" secondItem="p0S-pS-jUe" secondAttribute="leading" id="2cZ-cA-RfA"/>
+                                                        <constraint firstAttribute="width" constant="48" id="59Q-0H-NbZ"/>
+                                                        <constraint firstAttribute="height" constant="40" id="IEo-L5-w9i"/>
+                                                        <constraint firstAttribute="bottom" secondItem="i0C-Ey-0Zw" secondAttribute="bottom" id="i2L-be-got"/>
+                                                        <constraint firstAttribute="trailing" secondItem="i0C-Ey-0Zw" secondAttribute="trailing" id="jsI-0K-BUn"/>
+                                                        <constraint firstItem="i0C-Ey-0Zw" firstAttribute="top" secondItem="p0S-pS-jUe" secondAttribute="top" id="zVH-gK-jR9"/>
+                                                    </constraints>
+                                                </view>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpt-IZ-QNM">
                                                     <rect key="frame" x="0.0" y="0.0" width="124.5" height="59"/>
                                                 </button>
@@ -403,33 +428,33 @@ TouchID</string>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="bpt-IZ-QNM" firstAttribute="leading" secondItem="tc6-pO-fD3" secondAttribute="leading" id="2Xm-jQ-1uH"/>
-                                                <constraint firstItem="i0C-Ey-0Zw" firstAttribute="centerY" secondItem="tc6-pO-fD3" secondAttribute="centerY" id="EYU-c4-zeP"/>
                                                 <constraint firstAttribute="trailing" secondItem="bpt-IZ-QNM" secondAttribute="trailing" id="K4u-hk-xh9"/>
-                                                <constraint firstItem="i0C-Ey-0Zw" firstAttribute="centerX" secondItem="tc6-pO-fD3" secondAttribute="centerX" id="SpZ-rC-IOs"/>
+                                                <constraint firstItem="p0S-pS-jUe" firstAttribute="centerX" secondItem="tc6-pO-fD3" secondAttribute="centerX" id="NP1-UK-5ST"/>
                                                 <constraint firstItem="bpt-IZ-QNM" firstAttribute="top" secondItem="tc6-pO-fD3" secondAttribute="top" id="eX6-UX-nrm"/>
                                                 <constraint firstAttribute="bottom" secondItem="bpt-IZ-QNM" secondAttribute="bottom" id="gtQ-iW-jk4"/>
+                                                <constraint firstItem="p0S-pS-jUe" firstAttribute="centerY" secondItem="tc6-pO-fD3" secondAttribute="centerY" id="vZU-mn-Ddy"/>
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FBl-yE-0gf">
                                             <rect key="frame" x="125.5" y="0.0" width="124" height="59"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="huS-yg-MLI">
-                                                    <rect key="frame" x="44" y="11.5" width="36" height="36"/>
+                                                    <rect key="frame" x="38" y="9.5" width="48" height="40"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7iX-cD-ehV">
-                                                            <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="48" height="40"/>
                                                             <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="16"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="trailing" secondItem="7iX-cD-ehV" secondAttribute="trailing" id="APC-IF-UQu"/>
                                                         <constraint firstItem="7iX-cD-ehV" firstAttribute="top" secondItem="huS-yg-MLI" secondAttribute="top" id="EDw-gH-uBb"/>
-                                                        <constraint firstAttribute="height" constant="36" id="Pz7-lx-uaa"/>
+                                                        <constraint firstAttribute="height" constant="40" id="Pz7-lx-uaa"/>
                                                         <constraint firstItem="7iX-cD-ehV" firstAttribute="leading" secondItem="huS-yg-MLI" secondAttribute="leading" id="U8G-aa-veg"/>
-                                                        <constraint firstAttribute="width" constant="36" id="gok-ak-SMt"/>
+                                                        <constraint firstAttribute="width" constant="48" id="gok-ak-SMt"/>
                                                         <constraint firstAttribute="bottom" secondItem="7iX-cD-ehV" secondAttribute="bottom" id="iOI-Pk-4gd"/>
                                                     </constraints>
                                                 </view>
@@ -449,7 +474,47 @@ TouchID</string>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QQ3-lQ-tRX">
                                             <rect key="frame" x="250.5" y="0.0" width="124.5" height="59"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lKk-Xa-mxC">
+                                                    <rect key="frame" x="38.5" y="9.5" width="48" height="40"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KzE-tS-ELb">
+                                                            <rect key="frame" x="0.0" y="0.0" width="48" height="40"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="Delete">
+                                                                    <attributes>
+                                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                        <font key="NSFont" size="10" name="HiraMaruProN-W4"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="KzE-tS-ELb" firstAttribute="leading" secondItem="lKk-Xa-mxC" secondAttribute="leading" id="4hF-Xh-QCa"/>
+                                                        <constraint firstItem="KzE-tS-ELb" firstAttribute="top" secondItem="lKk-Xa-mxC" secondAttribute="top" id="Oqk-Hd-DsW"/>
+                                                        <constraint firstAttribute="trailing" secondItem="KzE-tS-ELb" secondAttribute="trailing" id="fNu-gd-KqX"/>
+                                                        <constraint firstAttribute="width" constant="48" id="u6c-H7-N3P"/>
+                                                        <constraint firstAttribute="height" constant="40" id="ym4-wW-Dlu"/>
+                                                        <constraint firstAttribute="bottom" secondItem="KzE-tS-ELb" secondAttribute="bottom" id="ytn-cN-SHc"/>
+                                                    </constraints>
+                                                </view>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drI-SX-VQ8">
+                                                    <rect key="frame" x="0.0" y="0.0" width="124.5" height="59"/>
+                                                </button>
+                                            </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="drI-SX-VQ8" firstAttribute="top" secondItem="QQ3-lQ-tRX" secondAttribute="top" id="7Vf-Oo-f7c"/>
+                                                <constraint firstAttribute="trailing" secondItem="drI-SX-VQ8" secondAttribute="trailing" id="CeU-eY-7XV"/>
+                                                <constraint firstAttribute="bottom" secondItem="drI-SX-VQ8" secondAttribute="bottom" id="ROo-nU-1o0"/>
+                                                <constraint firstItem="drI-SX-VQ8" firstAttribute="leading" secondItem="QQ3-lQ-tRX" secondAttribute="leading" id="Vte-LD-02E"/>
+                                                <constraint firstItem="lKk-Xa-mxC" firstAttribute="centerY" secondItem="QQ3-lQ-tRX" secondAttribute="centerY" id="Wyu-sb-51C"/>
+                                                <constraint firstItem="lKk-Xa-mxC" firstAttribute="centerX" secondItem="QQ3-lQ-tRX" secondAttribute="centerX" id="mq8-NY-hRh"/>
+                                            </constraints>
                                         </view>
                                     </subviews>
                                 </stackView>

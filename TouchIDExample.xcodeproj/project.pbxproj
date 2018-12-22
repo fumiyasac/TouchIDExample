@@ -32,7 +32,7 @@
 		DE43A61B2136E433000F178A /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43A61A2136E433000F178A /* UIViewControllerExtension.swift */; };
 		DE43A61D2136E459000F178A /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43A61C2136E459000F178A /* UIColorExtension.swift */; };
 		DE43A61F2136E696000F178A /* CustomViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43A61E2136E696000F178A /* CustomViewBase.swift */; };
-		DE43A6222136E79E000F178A /* DeviceOwnerLocalAuthenticatior.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43A6212136E79E000F178A /* DeviceOwnerLocalAuthenticatior.swift */; };
+		DE43A6222136E79E000F178A /* LocalAuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43A6212136E79E000F178A /* LocalAuthenticationManager.swift */; };
 		DE43A6242136E7E1000F178A /* DeviceOwnerLocalAuthenticationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43A6232136E7E1000F178A /* DeviceOwnerLocalAuthenticationType.swift */; };
 		DE43A6272136E947000F178A /* Passcode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE43A6252136E947000F178A /* Passcode.storyboard */; };
 		DE43A62A2136EA21000F178A /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE43A6282136EA21000F178A /* Setting.storyboard */; };
@@ -92,7 +92,7 @@
 		DE43A61A2136E433000F178A /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		DE43A61C2136E459000F178A /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		DE43A61E2136E696000F178A /* CustomViewBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewBase.swift; sourceTree = "<group>"; };
-		DE43A6212136E79E000F178A /* DeviceOwnerLocalAuthenticatior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceOwnerLocalAuthenticatior.swift; sourceTree = "<group>"; };
+		DE43A6212136E79E000F178A /* LocalAuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuthenticationManager.swift; sourceTree = "<group>"; };
 		DE43A6232136E7E1000F178A /* DeviceOwnerLocalAuthenticationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceOwnerLocalAuthenticationType.swift; sourceTree = "<group>"; };
 		DE43A6262136E947000F178A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Passcode.storyboard; sourceTree = "<group>"; };
 		DE43A6292136EA21000F178A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Setting.storyboard; sourceTree = "<group>"; };
@@ -274,10 +274,10 @@
 		DE43A6162136E2FC000F178A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DE118E1921C6F5A8003AFF8A /* SampleCollectionViewCell */,
 				DE43A61E2136E696000F178A /* CustomViewBase.swift */,
 				DE118E1421C6BD7B003AFF8A /* InputPasscodeDisplayView */,
 				DE118E0F21C6BCD0003AFF8A /* InputPasscodeKeyboardView */,
+				DE118E1921C6F5A8003AFF8A /* SampleCollectionViewCell */,
 				DE118E0E21C6BC94003AFF8A /* StickyStyleFlowLayout */,
 			);
 			path = View;
@@ -298,7 +298,7 @@
 			isa = PBXGroup;
 			children = (
 				DEF6732F21CA2ADF00FA8595 /* AppConstant.swift */,
-				DE43A6212136E79E000F178A /* DeviceOwnerLocalAuthenticatior.swift */,
+				DE43A6212136E79E000F178A /* LocalAuthenticationManager.swift */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -525,7 +525,7 @@
 				DEF6733021CA2ADF00FA8595 /* AppConstant.swift in Sources */,
 				DE118E0A21C68019003AFF8A /* NSObjectProtocolExtension.swift in Sources */,
 				DE43A61D2136E459000F178A /* UIColorExtension.swift in Sources */,
-				DE43A6222136E79E000F178A /* DeviceOwnerLocalAuthenticatior.swift in Sources */,
+				DE43A6222136E79E000F178A /* LocalAuthenticationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

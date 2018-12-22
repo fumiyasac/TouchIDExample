@@ -9,7 +9,7 @@
 import Foundation
 import LocalAuthentication
 
-class DeviceOwnerLocalAuthenticatior {
+class LocalAuthenticationManager {
     
     private static let localAuthenticationContext = LAContext()
 

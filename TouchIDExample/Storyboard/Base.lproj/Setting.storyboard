@@ -39,7 +39,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="n8n-IZ-0h7">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="202"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="222"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t2f-cQ-8db">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="52"/>
@@ -93,7 +93,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z91-kC-fnU">
-                                                <rect key="frame" x="0.0" y="100" width="375" height="102"/>
+                                                <rect key="frame" x="0.0" y="100" width="375" height="122"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mtk-Rp-b6B">
                                                         <rect key="frame" x="12" y="8" width="351" height="28"/>
@@ -109,10 +109,10 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYz-RB-MkV">
-                                                        <rect key="frame" x="52.5" y="48" width="270" height="42"/>
+                                                        <rect key="frame" x="52.5" y="58" width="270" height="42"/>
                                                         <color key="backgroundColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="270" id="Tun-Jy-1TD"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="270" id="Tun-Jy-1TD"/>
                                                             <constraint firstAttribute="height" constant="42" id="YrV-mT-2fk"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="14"/>
@@ -123,8 +123,8 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstItem="RYz-RB-MkV" firstAttribute="top" secondItem="Mtk-Rp-b6B" secondAttribute="bottom" constant="12" id="2cr-Fh-5e3"/>
-                                                    <constraint firstAttribute="bottom" secondItem="RYz-RB-MkV" secondAttribute="bottom" constant="12" id="6rG-8t-sxq"/>
+                                                    <constraint firstItem="RYz-RB-MkV" firstAttribute="top" secondItem="Mtk-Rp-b6B" secondAttribute="bottom" constant="22" id="2cr-Fh-5e3"/>
+                                                    <constraint firstAttribute="bottom" secondItem="RYz-RB-MkV" secondAttribute="bottom" constant="22" id="6rG-8t-sxq"/>
                                                     <constraint firstItem="RYz-RB-MkV" firstAttribute="centerX" secondItem="Z91-kC-fnU" secondAttribute="centerX" id="8f3-DO-KLX"/>
                                                     <constraint firstItem="Mtk-Rp-b6B" firstAttribute="top" secondItem="Z91-kC-fnU" secondAttribute="top" constant="8" id="AHO-C5-vxa"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" id="CPt-4X-adp"/>
