@@ -36,6 +36,8 @@
 		DE43A6242136E7E1000F178A /* DeviceOwnerLocalAuthenticationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43A6232136E7E1000F178A /* DeviceOwnerLocalAuthenticationType.swift */; };
 		DE43A6272136E947000F178A /* Passcode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE43A6252136E947000F178A /* Passcode.storyboard */; };
 		DE43A62A2136EA21000F178A /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE43A6282136EA21000F178A /* Setting.storyboard */; };
+		DE5E400F21CE41140085A545 /* PasscodePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E400E21CE41140085A545 /* PasscodePresenter.swift */; };
+		DE5E401121CE43E00085A545 /* InputPasscodeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E401021CE43E00085A545 /* InputPasscodeType.swift */; };
 		DEF6732E21C95A2100FA8595 /* TabBarItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF6732D21C95A2100FA8595 /* TabBarItemType.swift */; };
 		DEF6733021CA2ADF00FA8595 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF6732F21CA2ADF00FA8595 /* AppConstant.swift */; };
 		DEF6733321CA392C00FA8595 /* SampleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF6733121CA392C00FA8595 /* SampleCollectionViewCell.swift */; };
@@ -96,6 +98,8 @@
 		DE43A6232136E7E1000F178A /* DeviceOwnerLocalAuthenticationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceOwnerLocalAuthenticationType.swift; sourceTree = "<group>"; };
 		DE43A6262136E947000F178A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Passcode.storyboard; sourceTree = "<group>"; };
 		DE43A6292136EA21000F178A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Setting.storyboard; sourceTree = "<group>"; };
+		DE5E400E21CE41140085A545 /* PasscodePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodePresenter.swift; sourceTree = "<group>"; };
+		DE5E401021CE43E00085A545 /* InputPasscodeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPasscodeType.swift; sourceTree = "<group>"; };
 		DEF6732D21C95A2100FA8595 /* TabBarItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemType.swift; sourceTree = "<group>"; };
 		DEF6732F21CA2ADF00FA8595 /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
 		DEF6733121CA392C00FA8595 /* SampleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -149,6 +153,7 @@
 		DE118E0D21C6BBB8003AFF8A /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				DE5E400E21CE41140085A545 /* PasscodePresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -316,6 +321,7 @@
 			children = (
 				DE43A6232136E7E1000F178A /* DeviceOwnerLocalAuthenticationType.swift */,
 				DEF6732D21C95A2100FA8595 /* TabBarItemType.swift */,
+				DE5E401021CE43E00085A545 /* InputPasscodeType.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -510,6 +516,7 @@
 				DE29C71021CA8B2E005455C0 /* PasscodeModel.swift in Sources */,
 				DE118E0821C67FCD003AFF8A /* UICollectionViewExtension.swift in Sources */,
 				DE118DFF21C676D7003AFF8A /* GlobalTabBarController.swift in Sources */,
+				DE5E401121CE43E00085A545 /* InputPasscodeType.swift in Sources */,
 				DE29C70E21CA8AB0005455C0 /* FormViewController.swift in Sources */,
 				DE43A61F2136E696000F178A /* CustomViewBase.swift in Sources */,
 				DE118E0621C67B10003AFF8A /* PasscodeViewController.swift in Sources */,
@@ -519,6 +526,7 @@
 				DE118E1821C6E856003AFF8A /* InputPasscodeDisplayView.swift in Sources */,
 				DE118E0C21C6A9F1003AFF8A /* StickyStyleFlowLayout.swift in Sources */,
 				DEF6733321CA392C00FA8595 /* SampleCollectionViewCell.swift in Sources */,
+				DE5E400F21CE41140085A545 /* PasscodePresenter.swift in Sources */,
 				DE118E0421C67AD0003AFF8A /* SettingViewController.swift in Sources */,
 				DE43A61B2136E433000F178A /* UIViewControllerExtension.swift in Sources */,
 				DEF6732E21C95A2100FA8595 /* TabBarItemType.swift in Sources */,
