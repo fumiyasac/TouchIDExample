@@ -33,11 +33,11 @@ class SampleCollectionViewCell: UICollectionViewCell {
         self.contentView.layer.masksToBounds = true
         self.contentView.layer.cornerRadius = 8.0
         self.contentView.layer.borderWidth = 1.0
-        self.contentView.layer.borderColor = UIColor.init(code: "#dddddd").cgColor
+        self.contentView.layer.borderColor = UIColor(code: "#dddddd").cgColor
 
         // UICollectionViewのおおもとの部分にはドロップシャドウに関する設定を行う
         self.layer.masksToBounds = false
-        self.layer.shadowColor = UIColor.init(code: "#aaaaaa").cgColor
+        self.layer.shadowColor = UIColor(code: "#aaaaaa").cgColor
         self.layer.shadowOffset = CGSize(width: 0.33, height: 0.33)
         self.layer.shadowRadius = 1.5
         self.layer.shadowOpacity = 0.24

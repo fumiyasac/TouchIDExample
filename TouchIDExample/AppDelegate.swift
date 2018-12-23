@@ -15,41 +15,74 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-
-        // Debug.
         print("didFinishLaunchingWithOptions: アプリ起動時")
 
         return true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
-
-        // Debug.
         print("applicationWillResignActive: フォアグラウンドからバックグラウンドへ移行しようとした時")
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
-
-        // Debug.
         print("applicationDidEnterBackground: バックグラウンドへ移行完了した時")
+
+        // パスコードロック画面を表示する
+        displayPasscodeLockScreenIfNeeded()
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
-
-        // Debug.
         print("applicationWillEnterForeground: バックグラウンドからフォアグラウンドへ移行しようとした時")
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
-
-        // Debug.
         print("applicationDidBecomeActive: アプリの状態がアクティブになった時")
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
-
-        // Debug.
         print("applicationWillTerminate: アプリ終了時")
+    }
+
+    // MARK: - Private Function
+
+    private func displayPasscodeLockScreenIfNeeded() {
+        let passcodeModel = PasscodeModel()
+
+        // パスコードロックを設定していない場合は何もしない
+        if !passcodeModel.existsHashedPasscode() {
+            return
+        }
+
+        if let rootViewController = UIApplication.shared.keyWindow?.rootViewController {
+
+            // 現在のrootViewControllerにおいて一番上に表示されているViewControllerを取得する
+            var topViewController: UIViewController = rootViewController
+            while let presentedViewController = topViewController.presentedViewController {
+                topViewController = presentedViewController
+            }
+
+            // すでにパスコードロック画面がかぶせてあるかを確認する
+            let isDisplayedPasscodeLock: Bool = topViewController.children.map{
+                return $0 is PasscodeViewController
+            }.contains(true)
+
+            // パスコードロック画面がかぶせてなければかぶせる
+            if !isDisplayedPasscodeLock {
+                let nav = UINavigationController(rootViewController: getPasscodeViewController())
+                nav.modalPresentationStyle = .overFullScreen
+                nav.modalTransitionStyle   = .crossDissolve
+                topViewController.present(nav, animated: true, completion: nil)
+            }
+        }
+    }
+
+    private func getPasscodeViewController() -> PasscodeViewController {
+        // 遷移先のViewControllerに関する設定をする
+        let sb = UIStoryboard(name: "Passcode", bundle: nil)
+        let vc = sb.instantiateInitialViewController() as! PasscodeViewController
+        vc.setTargetInputPasscodeType(.displayPasscodeLock)
+        vc.setTargetPresenter(PasscodePresenter(previousPasscode: nil))
+        return vc
     }
 }
 

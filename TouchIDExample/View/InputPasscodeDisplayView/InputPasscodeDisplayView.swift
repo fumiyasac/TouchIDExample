@@ -12,7 +12,7 @@ import FontAwesome_swift
 
 class InputPasscodeDisplayView: CustomViewBase {
     
-    private let defaultKeyImageAlpha: CGFloat = 0.6
+    private let defaultKeyImageAlpha: CGFloat = 0.3
     private let selectedKeyImageAlpha: CGFloat = 1.0
 
     @IBOutlet private var keyImageViews: [UIImageView]!
@@ -45,6 +45,7 @@ class InputPasscodeDisplayView: CustomViewBase {
 
             // MEMO: 引数で渡された値とタグ値が一致した場合にはアニメーションを実行する
             if imageView.tag == passcodeStringCount {
+                imageView.alpha = selectedKeyImageAlpha
                 executeKeyImageAnimation(for: superView)
             } else if imageView.tag < passcodeStringCount {
                 imageView.alpha = selectedKeyImageAlpha
@@ -85,7 +86,7 @@ class InputPasscodeDisplayView: CustomViewBase {
         // アイコン画像用のViewが縮むようにバウンドするアニメーションを付与する
         UIView.animateKeyframes(withDuration: 0.06, delay: 0.0, options: [.autoreverse], animations: {
             UIView.addKeyframe(withRelativeStartTime: 0.5, relativeDuration: 1.0, animations: {
-                targetView.transform = CGAffineTransform(scaleX: 0.86, y: 0.86)
+                targetView.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
             })
             UIView.addKeyframe(withRelativeStartTime: 1.0, relativeDuration: 1.0, animations: {
                 targetView.transform = CGAffineTransform.identity

@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 // MEMO: このViewに配置しているボタンが押下された場合に値の変更を反映させるためのプロトコル
-protocol PasscodeNumberKeyboardDelegate: NSObjectProtocol {
+protocol InputPasscodeKeyboardDelegate: NSObjectProtocol {
 
     // 0~9の数字ボタンが押下された場合にその数字を文字列で送る
     func inputPasscodeNumber(_ numberOfString: String)
@@ -24,7 +24,7 @@ protocol PasscodeNumberKeyboardDelegate: NSObjectProtocol {
 
 class InputPasscodeKeyboardView: CustomViewBase {
 
-    weak var delegate: PasscodeNumberKeyboardDelegate?
+    weak var delegate: InputPasscodeKeyboardDelegate?
 
     // ボタン押下時の軽微な振動を追加する
     private let buttonFeedbackGenerator: UIImpactFeedbackGenerator = {
@@ -55,6 +55,13 @@ class InputPasscodeKeyboardView: CustomViewBase {
         super.init(coder: aDecoder)
 
         setupInputPasscodeKeyboardView()
+    }
+
+    // MARK: - Function
+
+    func shouldEnabledLocalAuthenticationButton(_ result: Bool = true) {
+        executeLocalAuthenticationButton.isEnabled = result
+        executeLocalAuthenticationButton.superview?.alpha = (result) ? 1.0 : 0.3
     }
 
     // MARK: - Private Function

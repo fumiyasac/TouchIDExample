@@ -38,6 +38,8 @@
 		DE43A62A2136EA21000F178A /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE43A6282136EA21000F178A /* Setting.storyboard */; };
 		DE5E400F21CE41140085A545 /* PasscodePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E400E21CE41140085A545 /* PasscodePresenter.swift */; };
 		DE5E401121CE43E00085A545 /* InputPasscodeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E401021CE43E00085A545 /* InputPasscodeType.swift */; };
+		DE5E401421CEE9AF0085A545 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E401321CEE9AF0085A545 /* StringExtension.swift */; };
+		DE5E401621CEED7E0085A545 /* CryptAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E401521CEED7E0085A545 /* CryptAlgorithm.swift */; };
 		DEF6732E21C95A2100FA8595 /* TabBarItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF6732D21C95A2100FA8595 /* TabBarItemType.swift */; };
 		DEF6733021CA2ADF00FA8595 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF6732F21CA2ADF00FA8595 /* AppConstant.swift */; };
 		DEF6733321CA392C00FA8595 /* SampleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF6733121CA392C00FA8595 /* SampleCollectionViewCell.swift */; };
@@ -100,6 +102,9 @@
 		DE43A6292136EA21000F178A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Setting.storyboard; sourceTree = "<group>"; };
 		DE5E400E21CE41140085A545 /* PasscodePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodePresenter.swift; sourceTree = "<group>"; };
 		DE5E401021CE43E00085A545 /* InputPasscodeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPasscodeType.swift; sourceTree = "<group>"; };
+		DE5E401221CECCD80085A545 /* TouchIDExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TouchIDExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		DE5E401321CEE9AF0085A545 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		DE5E401521CEED7E0085A545 /* CryptAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptAlgorithm.swift; sourceTree = "<group>"; };
 		DEF6732D21C95A2100FA8595 /* TabBarItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemType.swift; sourceTree = "<group>"; };
 		DEF6732F21CA2ADF00FA8595 /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
 		DEF6733121CA392C00FA8595 /* SampleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -218,12 +223,13 @@
 		DE43A5E52136E29A000F178A /* TouchIDExample */ = {
 			isa = PBXGroup;
 			children = (
+				DE5E401221CECCD80085A545 /* TouchIDExample-Bridging-Header.h */,
 				DE43A5F22136E29E000F178A /* Info.plist */,
 				DE43A5E62136E29A000F178A /* AppDelegate.swift */,
-				DE43A5EF2136E29E000F178A /* LaunchScreen.storyboard */,
 				DE43A5ED2136E29E000F178A /* Assets.xcassets */,
 				DE43A6202136E6F0000F178A /* Enum */,
 				DE43A6172136E331000F178A /* Extension */,
+				DE43A5EF2136E29E000F178A /* LaunchScreen.storyboard */,
 				DE43A6192136E3B9000F178A /* Model */,
 				DE43A6182136E346000F178A /* Module */,
 				DE118E0D21C6BBB8003AFF8A /* Presenter */,
@@ -295,6 +301,7 @@
 				DE118E0721C67FCD003AFF8A /* UICollectionViewExtension.swift */,
 				DE43A61C2136E459000F178A /* UIColorExtension.swift */,
 				DE43A61A2136E433000F178A /* UIViewControllerExtension.swift */,
+				DE5E401321CEE9AF0085A545 /* StringExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -319,6 +326,7 @@
 		DE43A6202136E6F0000F178A /* Enum */ = {
 			isa = PBXGroup;
 			children = (
+				DE5E401521CEED7E0085A545 /* CryptAlgorithm.swift */,
 				DE43A6232136E7E1000F178A /* DeviceOwnerLocalAuthenticationType.swift */,
 				DEF6732D21C95A2100FA8595 /* TabBarItemType.swift */,
 				DE5E401021CE43E00085A545 /* InputPasscodeType.swift */,
@@ -520,6 +528,7 @@
 				DE29C70E21CA8AB0005455C0 /* FormViewController.swift in Sources */,
 				DE43A61F2136E696000F178A /* CustomViewBase.swift in Sources */,
 				DE118E0621C67B10003AFF8A /* PasscodeViewController.swift in Sources */,
+				DE5E401621CEED7E0085A545 /* CryptAlgorithm.swift in Sources */,
 				DE43A5E92136E29A000F178A /* MainViewController.swift in Sources */,
 				DE43A6242136E7E1000F178A /* DeviceOwnerLocalAuthenticationType.swift in Sources */,
 				DE43A5E72136E29A000F178A /* AppDelegate.swift in Sources */,
@@ -533,6 +542,7 @@
 				DEF6733021CA2ADF00FA8595 /* AppConstant.swift in Sources */,
 				DE118E0A21C68019003AFF8A /* NSObjectProtocolExtension.swift in Sources */,
 				DE43A61D2136E459000F178A /* UIColorExtension.swift in Sources */,
+				DE5E401421CEE9AF0085A545 /* StringExtension.swift in Sources */,
 				DE43A6222136E79E000F178A /* LocalAuthenticationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -676,6 +686,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/TouchIDExample/TouchIDExample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -729,6 +740,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/TouchIDExample/TouchIDExample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};

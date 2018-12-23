@@ -35,7 +35,7 @@ class MainViewController: UIViewController {
     }
 
     private func setupNavigationItems() {
-        setupNavigationBarTitle("無駄遣い一覧")
+        setupNavigationBarTitle("お買い物一覧")
     }
 
     private func setupSampleCollectionView() {

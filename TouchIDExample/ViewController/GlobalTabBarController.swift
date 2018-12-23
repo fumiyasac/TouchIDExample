@@ -18,9 +18,26 @@ class GlobalTabBarController: UITabBarController, UITabBarControllerDelegate {
         self.viewControllers = [UIViewController(), UIViewController()]
 
         setupUserInterface()
+
+        // アプリ起動完了時のパスコード画面表示の通知監視
+        NotificationCenter.default.addObserver(self, selector: #selector(self.displayPasscodeLockScreenIfNeeded), name: UIApplication.didFinishLaunchingNotification, object: nil)
     }
 
     // MARK: - Private Function
+
+    @objc private func displayPasscodeLockScreenIfNeeded() {
+        let passcodeModel = PasscodeModel()
+
+        // パスコードロックを設定していない場合は何もしない
+        if !passcodeModel.existsHashedPasscode() {
+            return
+        }
+
+        let nav = UINavigationController(rootViewController: getPasscodeViewController())
+        nav.modalPresentationStyle = .overFullScreen
+        nav.modalTransitionStyle   = .crossDissolve
+        self.present(nav, animated: false, completion: nil)
+    }
 
     private func setupUserInterface() {
         setupGlobalTabBar()
@@ -62,5 +79,14 @@ class GlobalTabBarController: UITabBarController, UITabBarControllerDelegate {
             self.viewControllers?[index].tabBarItem.image = UIImage.fontAwesomeIcon(name: tabBarItem.getTabFontAwesomeIcon(), style: .solid, textColor: deselectedColor, size: itemSize).withRenderingMode(.alwaysOriginal)
             self.viewControllers?[index].tabBarItem.selectedImage = UIImage.fontAwesomeIcon(name: tabBarItem.getTabFontAwesomeIcon(), style: .solid, textColor: selectedColor, size: itemSize).withRenderingMode(.alwaysOriginal)
         }
+    }
+
+    private func getPasscodeViewController() -> PasscodeViewController {
+        // 遷移先のViewControllerに関する設定をする
+        let sb = UIStoryboard(name: "Passcode", bundle: nil)
+        let vc = sb.instantiateInitialViewController() as! PasscodeViewController
+        vc.setTargetInputPasscodeType(.displayPasscodeLock)
+        vc.setTargetPresenter(PasscodePresenter(previousPasscode: nil))
+        return vc
     }
 }

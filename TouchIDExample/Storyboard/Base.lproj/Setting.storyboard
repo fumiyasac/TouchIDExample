@@ -211,7 +211,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="cTl-hq-lsr"/>
                     <connections>
+                        <outlet property="editPasscodeButton" destination="vGR-dv-eL9" id="pP9-c7-RUB"/>
                         <outlet property="openSettingButton" destination="RYz-RB-MkV" id="hSc-pS-ORW"/>
+                        <outlet property="passcodeSwitch" destination="0cG-vF-G1E" id="rk2-i2-BMn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fRN-eW-7NL" userLabel="First Responder" sceneMemberID="firstResponder"/>
