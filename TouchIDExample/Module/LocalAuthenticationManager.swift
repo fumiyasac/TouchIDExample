@@ -13,7 +13,7 @@ class LocalAuthenticationManager {
 
     // MARK: - Static Function
 
-    static func getDeviceOwnerLocalAuthenticationType() -> DeviceOwnerLocalAuthenticationType {
+    static func getDeviceOwnerLocalAuthenticationType() -> LocalAuthenticationType {
         let localAuthenticationContext = LAContext()
 
         // iOS11以上の場合: FaceID/TouchID/パスコードの3種類

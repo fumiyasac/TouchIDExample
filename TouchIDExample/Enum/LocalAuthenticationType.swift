@@ -1,5 +1,5 @@
 //
-//  DeviceOwnerLocalAuthenticationType.swift
+//  LocalAuthenticationType.swift
 //  TouchIDExample
 //
 //  Created by 酒井文也 on 2018/08/29.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum DeviceOwnerLocalAuthenticationType {
+enum LocalAuthenticationType {
     case authWithFaceID  // FaceIDでのパスコード解除
     case authWithTouchID // TouchIDでのパスコード解除
     case authWithManual  // 手動入力でのパスコード解除

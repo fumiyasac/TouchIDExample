@@ -24,7 +24,9 @@ class PasscodeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // MEMO: PasscodePresenterに定義したプロトコルの処理を実行するようにする
         presenter.delegate = self
+
         setupUserInterface()
     }
 
@@ -113,7 +115,7 @@ extension PasscodeViewController: InputPasscodeKeyboardDelegate {
             inputPasscodeDisplayView.incrementDisplayImagesBy(passcodeStringCount: userInputPasscode.count)
         }
 
-        // パスコードが4文字の場合は入力完了処理を実行する
+        // パスコードが4文字の場合はPasscodePresenter側に定義した入力完了処理を実行する
         if userInputPasscode.count == AppConstant.PASSCODE_LENGTH {
             presenter.inputCompleted(userInputPasscode, inputPasscodeType: inputPasscodeType)
         }
@@ -129,17 +131,21 @@ extension PasscodeViewController: InputPasscodeKeyboardDelegate {
     }
 
     func executeLocalAuthentication() {
+
+        // パスコードロック画面以外では操作を許可しない
         guard inputPasscodeType == .displayPasscodeLock else {
             return
         }
 
-        LocalAuthenticationManager.evaluateDeviceOwnerLocalAuthentication(successHandler: {
-            DispatchQueue.main.async {
-                self.dismiss(animated: true, completion: nil)
-            }
-        }, errorHandler: {
-            
-        })
+        // TouchID/FaceIDによる認証を実行し、成功した場合にはパスコードロックを解除する
+        LocalAuthenticationManager.evaluateDeviceOwnerLocalAuthentication(
+            successHandler: {
+                DispatchQueue.main.async {
+                    self.dismiss(animated: true, completion: nil)
+                }
+            },
+            errorHandler: {}
+        )
     }
 }
 
@@ -147,6 +153,7 @@ extension PasscodeViewController: InputPasscodeKeyboardDelegate {
 
 extension PasscodeViewController: PasscodePresenterDelegate {
 
+    // 次に表示するべき画面へ入力された値を引き継いだ状態で遷移する
     func goNext() {
         executeSeriesAction(
             firstAction: {},
@@ -169,6 +176,7 @@ extension PasscodeViewController: PasscodePresenterDelegate {
         )
     }
 
+    // パスコードロック画面を解除する
     func dismissPasscodeLock() {
         executeSeriesAction(
             firstAction: {},
@@ -178,6 +186,7 @@ extension PasscodeViewController: PasscodePresenterDelegate {
         )
     }
 
+    // ユーザーが入力したパスコードを保存して設定画面へ戻る
     func savePasscode() {
         executeSeriesAction(
             firstAction: {},
@@ -187,6 +196,7 @@ extension PasscodeViewController: PasscodePresenterDelegate {
         )
     }
 
+    // ユーザーが入力した値が正しくないことをユーザーへ伝える
     func showError() {
         executeSeriesAction(
             // 実行直後はエラーメッセージを表示する & バイブレーションを適用する

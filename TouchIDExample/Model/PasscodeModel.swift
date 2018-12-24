@@ -18,6 +18,7 @@ class PasscodeModel {
 
     // MARK: - Function
 
+    // ユーザーが入力したパスコードを保存する
     func saveHashedPasscode(_ passcode: String) -> Bool {
         if isValid(passcode) {
             setHashedPasscode(passcode)
@@ -27,21 +28,25 @@ class PasscodeModel {
         }
     }
 
+    // ユーザーが入力したパスコードと現在保存されているパスコードを比較する
     func compareSavedPasscodeWith(inputPasscode: String) -> Bool {
         let hashedInputPasscode = getHashedPasscodeByHMAC(inputPasscode)
         let savedPasscode = getHashedPasscode()
         return hashedInputPasscode == savedPasscode
     }
 
+    // ユーザーが入力したパスコードが存在するかを判定する
     func existsHashedPasscode() -> Bool {
         let savedPasscode = getHashedPasscode()
         return !savedPasscode.isEmpty
     }
 
+    // HMAC形式でハッシュ化されたパスコード取得する
     func getHashedPasscode() -> String {
         return ud.string(forKey: userHashedPasscode) ?? ""
     }
 
+    // 現在保存されているパスコードを削除する
     func deleteHashedPasscode() {
         ud.set("", forKey: userHashedPasscode)
     }
