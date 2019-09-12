@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -404,16 +404,16 @@
 				TargetAttributes = {
 					DE43A5E22136E299000F178A = {
 						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1030;
 					};
 					DE43A5F62136E29E000F178A = {
 						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1030;
 						TestTargetID = DE43A5E22136E299000F178A;
 					};
 					DE43A6012136E29E000F178A = {
 						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1030;
 						TestTargetID = DE43A5E22136E299000F178A;
 					};
 				};
@@ -479,20 +479,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TouchIDExample/Pods-TouchIDExample-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-TouchIDExample/Pods-TouchIDExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-TouchIDExample/Pods-TouchIDExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TouchIDExample/Pods-TouchIDExample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TouchIDExample/Pods-TouchIDExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A20614125EA40A1A253C3AF4 /* [CP] Check Pods Manifest.lock */ = {
@@ -761,7 +756,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.just1factory.TouchIDExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -781,7 +776,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.just1factory.TouchIDExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -801,7 +796,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.just1factory.TouchIDExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TouchIDExample.app/TouchIDExample";
 			};
@@ -822,7 +817,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.just1factory.TouchIDExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TouchIDExample.app/TouchIDExample";
 			};
@@ -842,7 +837,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.just1factory.TouchIDExampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TouchIDExample;
 			};
@@ -862,7 +857,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.just1factory.TouchIDExampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TouchIDExample;
 			};
