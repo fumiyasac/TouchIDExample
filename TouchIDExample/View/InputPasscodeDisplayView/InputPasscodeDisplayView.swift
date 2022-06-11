@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-import FontAwesome_swift
 
 class InputPasscodeDisplayView: CustomViewBase {
     
@@ -75,7 +74,10 @@ class InputPasscodeDisplayView: CustomViewBase {
     private func setupInputPasscodeDisplayView() {
         keyImageViews.enumerated().forEach {
             let imageView = $0.element
-            imageView.image = UIImage.fontAwesomeIcon(name: .key, style: .solid, textColor: .black, size: CGSize(width: 48.0, height: 48.0))
+            imageView.image = UIImage(
+                systemName: "key.fill",
+                withConfiguration: UIImage.SymbolConfiguration(pointSize: 48.0, weight: .black)
+            )!.withTintColor(UIColor.black, renderingMode: .alwaysOriginal)
             imageView.alpha = defaultKeyImageAlpha
         }
     }

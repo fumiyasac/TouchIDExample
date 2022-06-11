@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import FontAwesome_swift
+import UIKit
 
 enum TabBarItemType: CaseIterable {
     case home
@@ -44,12 +44,12 @@ enum TabBarItemType: CaseIterable {
     }
 
     // tabBarのFontAwesomeアイコン名を取得する
-    func getTabFontAwesomeIcon() -> FontAwesome {
+    func getTabBarSymbolName() -> String {
         switch self {
         case .home:
-            return .home
+            return "house.fill"
         case .setting:
-            return .bars
+            return "list.bullet"
         }
     }
 }

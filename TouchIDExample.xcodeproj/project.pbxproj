@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		77675A983766A55D4F7635BE /* Pods_TouchIDExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6807592E2F142F688066A4F1 /* Pods_TouchIDExample.framework */; };
 		DE118DFF21C676D7003AFF8A /* GlobalTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE118DFE21C676D7003AFF8A /* GlobalTabBarController.swift */; };
 		DE118E0221C67736003AFF8A /* GlobalTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE118E0021C67736003AFF8A /* GlobalTabBar.storyboard */; };
 		DE118E0421C67AD0003AFF8A /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE118E0321C67AD0003AFF8A /* SettingViewController.swift */; };
@@ -64,8 +63,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6807592E2F142F688066A4F1 /* Pods_TouchIDExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TouchIDExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		78C94E25900CE379AD0D6E08 /* Pods-TouchIDExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchIDExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-TouchIDExample/Pods-TouchIDExample.release.xcconfig"; sourceTree = "<group>"; };
 		DE118DFE21C676D7003AFF8A /* GlobalTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalTabBarController.swift; sourceTree = "<group>"; };
 		DE118E0121C67736003AFF8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/GlobalTabBar.storyboard; sourceTree = "<group>"; };
 		DE118E0321C67AD0003AFF8A /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
@@ -109,7 +106,6 @@
 		DEF6732F21CA2ADF00FA8595 /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
 		DEF6733121CA392C00FA8595 /* SampleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCollectionViewCell.swift; sourceTree = "<group>"; };
 		DEF6733221CA392C00FA8595 /* SampleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleCollectionViewCell.xib; sourceTree = "<group>"; };
-		E521A077C113DED12568D92E /* Pods-TouchIDExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchIDExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TouchIDExample/Pods-TouchIDExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +113,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77675A983766A55D4F7635BE /* Pods_TouchIDExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +133,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		308DC49BE08C84EE6C1D484B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E521A077C113DED12568D92E /* Pods-TouchIDExample.debug.xcconfig */,
-				78C94E25900CE379AD0D6E08 /* Pods-TouchIDExample.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		3991505D479FFB387BB22B03 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6807592E2F142F688066A4F1 /* Pods_TouchIDExample.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		DE118E0D21C6BBB8003AFF8A /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,8 +183,6 @@
 				DE43A5FA2136E29E000F178A /* TouchIDExampleTests */,
 				DE43A6052136E29E000F178A /* TouchIDExampleUITests */,
 				DE43A5E42136E299000F178A /* Products */,
-				308DC49BE08C84EE6C1D484B /* Pods */,
-				3991505D479FFB387BB22B03 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -341,11 +317,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE43A60B2136E29F000F178A /* Build configuration list for PBXNativeTarget "TouchIDExample" */;
 			buildPhases = (
-				A20614125EA40A1A253C3AF4 /* [CP] Check Pods Manifest.lock */,
 				DE43A5DF2136E299000F178A /* Sources */,
 				DE43A5E02136E299000F178A /* Frameworks */,
 				DE43A5E12136E299000F178A /* Resources */,
-				4FDA5E6B60CE071A5EA1CA2E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -471,44 +445,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		4FDA5E6B60CE071A5EA1CA2E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TouchIDExample/Pods-TouchIDExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TouchIDExample/Pods-TouchIDExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TouchIDExample/Pods-TouchIDExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A20614125EA40A1A253C3AF4 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TouchIDExample-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DE43A5DF2136E299000F178A /* Sources */ = {
@@ -676,7 +612,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -731,7 +667,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -743,13 +679,12 @@
 		};
 		DE43A60C2136E29F000F178A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E521A077C113DED12568D92E /* Pods-TouchIDExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5BF5553KY;
 				INFOPLIST_FILE = TouchIDExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -763,13 +698,12 @@
 		};
 		DE43A60D2136E29F000F178A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78C94E25900CE379AD0D6E08 /* Pods-TouchIDExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5BF5553KY;
 				INFOPLIST_FILE = TouchIDExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

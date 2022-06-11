@@ -6,5 +6,5 @@ target 'TouchIDExample' do
   use_frameworks!
 
   # Pods for TouchIDExample
-  pod 'FontAwesome.swift'
+  # pod 'FontAwesome.swift'
 end
