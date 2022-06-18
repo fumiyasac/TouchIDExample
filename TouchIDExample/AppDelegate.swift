@@ -17,6 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         print("didFinishLaunchingWithOptions: アプリ起動時")
 
+        // MEMO: iOS15に関する配色に関する調整対応
+        setupNavigationBarAppearance()
+
         return true
     }
 
@@ -84,5 +87,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         vc.setTargetPresenter(PasscodePresenter(previousPasscode: nil))
         return vc
     }
-}
 
+    private func setupNavigationBarAppearance() {
+
+        // iOS15以降ではUINavigationBarの配色指定方法が変化する点に注意する
+        // https://shtnkgm.com/blog/2021-08-18-ios15.html
+        if #available(iOS 15.0, *) {
+            let navigationBarAppearance = UINavigationBarAppearance()
+            navigationBarAppearance.configureWithOpaqueBackground()
+
+            // MEMO: UINavigationBar内部におけるタイトル文字の装飾設定
+            navigationBarAppearance.titleTextAttributes = [
+                NSAttributedString.Key.font : UIFont(name: "HiraKakuProN-W6", size: 14.0)!,
+                NSAttributedString.Key.foregroundColor : UIColor.white
+            ]
+
+            // MEMO: UINavigationBar背景色の装飾設定
+            navigationBarAppearance.backgroundColor = UIColor(code: "#333333")
+
+            UINavigationBar.appearance().standardAppearance = navigationBarAppearance
+            UINavigationBar.appearance().scrollEdgeAppearance = navigationBarAppearance
+        }
+    }
+}
